@@ -181,15 +181,6 @@
         width: 50%;
         height: 100%;
     }
-    .chap{
-        padding: 9px 0 12px 0;
-        box-sizing: border-box;
-        font-size: 14px;
-        font-weight: bold;
-    }
-    .title{
-        font-size: 18px;
-    }
     
 }
 
@@ -290,11 +281,92 @@
         width: 100%;
     }
     .begin-tab-inner>li{
-        width: 33.333%;
+        width: 50%;
         height: 100%;
         padding: 0 13px 70px 13px;
     }
     
 }
 
-
+.book-cont{
+    width: 100%;
+    margin-top: 46px;
+    color: #444444;
+}
+.book-cont>ul{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.book-cont>ul>li{
+    display: flex;
+    width: 50%;
+    margin-bottom: 87px;
+}
+.book-cont>ul>li>a{
+    width: 190px;
+    height: 258px;
+}
+.book-cont>ul>li>a>img{
+    width: 100%;
+}
+.book-cont>ul>li p{
+    display: flex;
+    flex-direction: column;
+    padding-left: 39px;
+    box-sizing: border-box;
+}
+.book-cont>ul>li>p a{
+    display: block;
+    width: 100px;
+    height: 50px;
+    margin-top: 114px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    line-height: 50px;
+}
+@media(max-width : 1024px){
+    .book-cont{
+        width: 100%;
+        margin-top: 20.5px;
+        color: #444444;
+    }
+    .book-cont>ul{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .book-cont>ul>li{
+        display: flex;
+        width: 100%;
+        padding: 0 21px;
+    }
+    .book-cont>ul>li{
+        margin-bottom: 22px;
+    }
+    .book-cont>ul>li>a{
+        display: block;
+        width: 130px;
+        height: 177px;
+    }
+    .book-cont>ul>li>a>img{
+        min-width: 130px;
+    }
+    .book-cont>ul>li p{
+        display: flex;
+        flex-direction: column;
+        padding-left: 39px;
+        box-sizing: border-box;
+    }
+    .book-cont>ul>li>p a{
+        display: block;
+        width: 86px;
+        height: 37px;
+        margin-top: 71px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        text-align: center;
+        line-height: 37px;
+    }
+}
