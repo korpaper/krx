@@ -1,0 +1,44 @@
+@font-face {
+    font-family: NotoSansKR;
+    src: url(/_krxuser/font/NotoSansKR-Regular.otf);
+}
+
+@font-face {
+    font-family: OmniGothic035;
+    src: url(/_krxuser/font/210OmniGothic035.ttf);
+}
+
+
+
+/* braek all 없앰 */
+body {
+    font-family: "NotoSansKR";
+    font-size: 16px;
+    letter-spacing: -1px;
+    overflow-x: hidden;
+}
+
+/* 콘텐츠 제목(h3) */
+.contents-tit{
+    position: relative;
+    font-size: 22px;
+    font-weight: bold;
+    color: #313946;
+}
+.contents-tit::before{
+    position: absolute;
+    top: -3px;
+    left: -13px;
+    display: inline-block;
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #00b4d5;
+}
+
+@media(max-width : 1024px){
+    .contents-tit{
+        font-size: 16px;
+    }
+}

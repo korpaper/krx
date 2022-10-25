@@ -1,0 +1,300 @@
+/* tab on off */
+.begin-tab-list .begin-list.on2{
+    display: block;
+}
+.begin-tab-list .begin-list{
+    display: none;
+}
+
+/* tab 효과 */
+.active2{
+    color: #fff;
+    background: #313946;
+}
+
+.child-main{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.sub-wrap{
+    display: flex;
+    margin-top: 140px;
+    width: 100%;
+}
+/* lnb 영역 */
+.lnb-wrap{
+    min-width: 260px;
+    background-color: red;
+}
+/* 컨텐츠 영역 */
+.sub-contents-wrap{
+    width: 100%;
+    padding-left: 60px;
+    box-sizing: border-box;
+}
+.sub-contents-wrap .sub-tit-area{
+    width: 100%;
+    height: 110px;
+    padding: 32px 0 0 0;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.sub-tit{
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+.sub-tit .dot{
+    display: inline-block;
+    content: "";
+    width: 4px;
+    height: 4px;
+    margin: 0 18px;
+    border-radius: 50%;
+    background: #000;
+}
+.sub-navi{
+    padding-top: 17px;
+    box-sizing: border-box;
+    color: #9d9d9d;
+}
+.sub-navi .navi{
+    display: flex;
+    justify-content: flex-end;
+}
+.sub-navi .navi>li{
+    display: flex;
+    align-items: center;
+}
+.sub-navi .navi>li::after{
+    display: inline-block;
+    content: "";
+    width: 3px;
+    height: 3.2px;
+    margin: 0 12.5px;
+    border-top: 1px solid #707070;
+    border-right: 1px solid #707070;
+    transform: rotate(45deg);
+}
+.sub-navi .navi>li.last::after{
+    display: none;
+}
+.video-child-cont{
+    width: 100%;
+    padding-top: 46px;
+    box-sizing: border-box;
+}
+.video-child-cont>ul{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.video-child-cont>ul>li{
+    width: 33.333%;
+    height: 100%;
+    padding: 0 13px 70px 13px;
+}
+.video-child-cont>ul>li>a{
+    width: 289px;
+    height: 163px;
+}
+.video-child-cont>ul>li>a>img{
+    width: 100%;
+}
+.video-child-cont>ul>li>p{
+    display: flex;
+    flex-direction: column;
+    color: #444444;
+}
+.chap{
+    padding: 9px 0 12px 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: bold;
+}
+.title{
+    font-size: 18px;
+}
+
+@media (max-width:1024px){
+    .child-main{
+        width: 100%;
+    }
+    .sub-wrap{
+        display: flex;
+        margin-top: 0;
+        width: 100%;
+    }
+    .lnb-wrap{
+        display: none;
+    }
+    .sub-contents-wrap{
+        width: 100%;
+        padding-left: 0;
+        box-sizing: border-box;
+    }
+    .sub-contents-wrap .sub-tit-area{
+        width: 100%;
+        height: 41px;
+        padding: 0 0 0 0;
+        box-sizing: border-box;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    .sub-tit{
+        display: none;
+    }
+    .sub-tit .dot{
+        display: inline-block;
+        content: "";
+        width: 4px;
+        height: 4px;
+        margin: 0 18px;
+        border-radius: 50%;
+        background: #000;
+    }
+    .sub-navi{
+        width: 100%;
+        padding: 0 20px;
+        padding-top: 0;
+        box-sizing: border-box;
+    }
+    .sub-navi .navi{
+        display: flex;
+        justify-content: flex-start;
+        line-height: 41px;
+        overflow-y: hidden;
+        overflow-x: scroll;
+    }
+    .sub-navi .navi>li{
+        white-space: nowrap;
+    }
+    .video-child-cont{
+        padding-top: 22.5px;
+    }
+    .video-child-cont>ul{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .video-child-cont>ul>li{
+        width: 50%;
+        height: 100%;
+    }
+    .chap{
+        padding: 9px 0 12px 0;
+        box-sizing: border-box;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .title{
+        font-size: 18px;
+    }
+    
+}
+
+/* 초보투자자 교실 beginner */
+.begin-wrap{
+    width: 100%;
+    margin-top: 35px;
+}
+.begin-tab-nav{
+    display: flex;
+    width: 100%;
+}
+.begin-tab-nav>li{
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    padding: 14px 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.begin-tab-nav>li>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.des-tit::after{
+    display: inline-block;
+    content: "";
+    width: 2px;
+    height: 2px;
+    margin: 4px 8px;
+    border-radius: 50%;
+    background: #000;
+}
+.begin-tab-list{
+    width: 100%;
+}
+.begin-tab-list>li{
+    width: 100%;
+}
+.des{
+    padding: 23px 0 30px 0;
+    text-align: center;
+    font-size: 13px;
+    color: #9d9d9d;
+}
+.des-tit{
+    color: #000;
+}
+.begin-tab-inner{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.begin-tab-inner>li{
+    width: 33.333%;
+    height: 100%;
+    padding: 0 13px 70px 13px;
+}
+.begin-tab-inner>li>a{
+    width: 289px;
+    height: 163px;
+}
+.begin-tab-inner>li>a>img{
+    width: 100%;
+}
+.begin-tab-inner>li>p{
+    display: flex;
+    flex-direction: column;
+    color: #444444;
+}
+
+@media(max-width:1024px){
+    .begin-wrap{
+        width: 100%;
+        margin-top: 23px;
+    }
+    .begin-tab-nav{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .begin-tab-nav>li{
+        width: 50%;
+    }
+    .des{
+        display: none;
+    }
+    .begin-tab-list{
+        margin-top: 30px;
+    }
+    .begin-tab-inner{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .begin-tab-inner>li{
+        width: 33.333%;
+        height: 100%;
+        padding: 0 13px 70px 13px;
+    }
+    
+}
+
+

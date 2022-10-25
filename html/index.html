@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head data-include-file="/_krxuser/include/head.html" class="includeJs">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </head>
+<body>
+    <header data-include-file="/_krxuser/include/header.html" class="header-wrap includeJs"></header>
+    <main class="main">
+        <!-- 사이드 퀵메뉴 -->
+        <div class="side-quick">
+            <ul>
+                <li>QUICK MENU</li>
+                <li><a href="#lnk">자본시장</a></li>
+                <li><a href="#lnk">파생상품</a></li>
+                <li><a href="#lnk">환리스크 관리</a></li>
+                <li><a href="#lnk">ETF</a></li>
+                <li><a href="#lnk">ETN</a></li>
+                <li><a href="#lnk">ELW</a></li>
+                <li><a href="#lnk">KOBA워런트</a></li>
+                <li class="last"><a href="#lnk">동영상 강의</a></li>
+            </ul>
+        </div>
+        <!-- 클릭 시 통합검색으로 이동 -->
+        <div class="main-top-wrap">
+            <div class="main-search">
+                <h2 class="sc-tit">이곳에 금융에 대해 궁금했던 키워드를 물어보세요!</h2>
+                <div class="sc-box">
+                    <a href="#lnk" ><img src="/_krxuser/img/search.webp" alt="검색"></a>
+                </div>
+            </div>
+            <div class="mb-main-search">
+                <div class="mb-search-inner">
+                    <h2 class="sc-tit">이곳에 금융에 대해 궁금했던 키워드를 물어보세요!</h2>
+                    <div class="sc-box">
+                        <a href="#lnk" ><img src="/_krxuser/img/mb Icon feather-search.webp" alt="검색"></a>
+                    </div>
+                </div>
+            </div>
+            <!-- 메인 퀵 메뉴 -->
+            <div class="center-quick">
+                <ul>
+                    <li>
+                        <a href="#lnk">
+                            <span class="icon-bg">
+                                <img src="/_krxuser/img/icon-capital.webp" alt="자본시장">
+                            </span>
+                            <span class="icon-text">자본시장</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#lnk">
+                            <span class="icon-bg">
+                                <img src="/_krxuser/img/icon-det.webp" alt="파생상품">
+                            </span>
+                            <span class="icon-text">파생상품</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#lnk">
+                            <span class="icon-bg">
+                                <img src="/_krxuser/img/icon-risk.webp" alt="환리스크 관리">
+                            </span>
+                            <span class="icon-text">환리스크 관리</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#lnk">
+                            <span class="icon-bg">
+                                <img src="/_krxuser/img/icon-etf.webp" alt="ETF">
+                            </span>
+                            <span class="icon-text">ETF</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#lnk">
+                            <span class="icon-bg">
+                                <img src="/_krxuser/img/icon-etn.webp" alt="ETN">
+                            </span>
+                            <span class="icon-text">ETN</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#lnk">
+                            <span class="icon-bg">
+                                <img src="/_krxuser/img/icon-elw.webp" alt="ELW">
+                            </span>
+                            <span class="icon-text">ELW</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#lnk">
+                            <span class="icon-bg">
+                                <img src="/_krxuser/img/icon-koba.webp" alt="KOBA워런트">
+                            </span>
+                            <span class="icon-text">KOBA워런트</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#lnk">
+                            <span class="icon-bg">
+                                <img src="/_krxuser/img/icon-esg.webp" alt="ESG">
+                            </span>
+                            <span class="icon-text">ESG</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#lnk">
+                            <span class="icon-bg">
+                                <img src="/_krxuser/img/icon-fitedu.webp" alt="내게 맞는 교육">
+                            </span>
+                            <span class="icon-text">내게 맞는 교육</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 탭, 콘텐츠 종류(비디오,ebook)에 따라 좌상단 아이콘 변경,
+                카테고리에 따라 우상단 아이콘 변경(위 퀵메뉴 아이콘과 동일)
+                조회수에 따라 주간, 월간, 연간 컨텐츠 변경됩니다.(조회수 동일 시 최신순으로 정렬)-->
+            <div class="best-contents tab-container">
+                <div class="tab-nav-wrap">
+                    <h3 class="contents-tit">베스트 콘텐츠</h3>
+                    <ul class="tab-nav best">
+                        <li class="on tab-tit"><a href="#lnk"><span>주간</span></a></li>
+                        <li class="on tab-tit"><a href="#lnk"><span>월간</span></a></li>
+                        <li class="on tab-tit last"><a href="#lnk"><span>연간</span></a></li>
+                    </ul>
+                </div>
+                <ul class="tab-list best">
+                    <li class="list on">
+                        <ul class="tab-inner">
+                            <li class="tab-inner-list">
+                                <a href="#lnk">
+                                    <span class="icons">
+                                        <img src="/_krxuser/img/Icon material-play-circle-outline.webp" alt="영상컨텐츠">
+                                        <img src="/_krxuser/img/icon-etf.webp" alt="ETF">
+                                    </span>
+                                    <p class="list-text">
+                                        <span class="list-category">ETF 강의실1</span>
+                                        <span class="list-tit">ETF, ETN 가격괴리 정확하게 이해하기</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="tab-inner-list">
+                                <a href="#lnk">
+                                    <span class="icons">
+                                        <img src="/_krxuser/img/Icon feather-book-open.webp" alt="ebook컨텐츠">
+                                        <img src="/_krxuser/img/icon-etf.webp" alt="ETF">
+                                    </span>
+                                    <p class="list-text">
+                                        <span class="list-category">ETF 강의</span>
+                                        <span class="list-tit">레버리지, 인버스 ETF, ETN 투자 정확하게 이해하기</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="tab-inner-list">
+                                <a href="#lnk">
+                                    <span class="icons">
+                                        <img src="/_krxuser/img/Icon material-play-circle-outline.webp" alt="영상컨텐츠">
+                                        <img src="/_krxuser/img/icon-etf.webp" alt="ETF">
+                                    </span>
+                                    <p class="list-text">
+                                        <span class="list-category">ETF 강의실</span>
+                                        <span class="list-tit">애니메이션으로 보는 투자실패사례</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="tab-inner-list">
+                                <a href="#lnk">
+                                    <span class="icons">
+                                        <img src="/_krxuser/img/Icon feather-book-open.webp" alt="ebook컨텐츠">
+                                        <img src="/_krxuser/img/icon-elw.webp" alt="ELW">
+                                    </span>
+                                    <p class="list-text">
+                                        <span class="list-category">ELW 강의실</span>
+                                        <span class="list-tit">교육을 시작하며</span>
+                                    </p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list">
+                        <ul class="tab-inner">
+                            <li class="tab-inner-list">
+                                <a href="#lnk">
+                                    <span class="icons">
+                                        <img src="/_krxuser/img/Icon material-play-circle-outline.webp" alt="영상컨텐츠">
+                                        <img src="/_krxuser/img/icon-etf.webp" alt="ETF">
+                                    </span>
+                                    <p class="list-text">
+                                        <span class="list-category">ETF 강의실2</span>
+                                        <span class="list-tit">ETF, ETN 가격괴리 정확하게 이해하기</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="tab-inner-list">
+                                <a href="#lnk">
+                                    <span class="icons">
+                                        <img src="/_krxuser/img/Icon feather-book-open.webp" alt="ebook컨텐츠">
+                                        <img src="/_krxuser/img/icon-etf.webp" alt="ETF">
+                                    </span>
+                                    <p class="list-text">
+                                        <span class="list-category">ETF 강의</span>
+                                        <span class="list-tit">레버리지, 인버스 ETF, ETN 투자 정확하게 이해하기</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="tab-inner-list">
+                                <a href="#lnk">
+                                    <span class="icons">
+                                        <img src="/_krxuser/img/Icon material-play-circle-outline.webp" alt="영상컨텐츠">
+                                        <img src="/_krxuser/img/icon-etf.webp" alt="ETF">
+                                    </span>
+                                    <p class="list-text">
+                                        <span class="list-category">ETF 강의실</span>
+                                        <span class="list-tit">애니메이션으로 보는 투자실패사례</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="tab-inner-list">
+                                <a href="#lnk">
+                                    <span class="icons">
+                                        <img src="/_krxuser/img/Icon feather-book-open.webp" alt="ebook컨텐츠">
+                                        <img src="/_krxuser/img/icon-elw.webp" alt="ELW">
+                                    </span>
+                                    <p class="list-text">
+                                        <span class="list-category">ELW 강의실</span>
+                                        <span class="list-tit">교육을 시작하며</span>
+                                    </p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list">
+                        <ul class="tab-inner">
+                            <li class="tab-inner-list">
+                                <a href="#lnk">
+                                    <span class="icons">
+                                        <img src="/_krxuser/img/Icon material-play-circle-outline.webp" alt="영상컨텐츠">
+                                        <img src="/_krxuser/img/icon-etf.webp" alt="ETF">
+                                    </span>
+                                    <p class="list-text">
+                                        <span class="list-category">ETF 강의실3</span>
+                                        <span class="list-tit">ETF, ETN 가격괴리 정확하게 이해하기</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="tab-inner-list">
+                                <a href="#lnk">
+                                    <span class="icons">
+                                        <img src="/_krxuser/img/Icon feather-book-open.webp" alt="ebook컨텐츠">
+                                        <img src="/_krxuser/img/icon-etf.webp" alt="ETF">
+                                    </span>
+                                    <p class="list-text">
+                                        <span class="list-category">ETF 강의</span>
+                                        <span class="list-tit">레버리지, 인버스 ETF, ETN 투자 정확하게 이해하기</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="tab-inner-list">
+                                <a href="#lnk">
+                                    <span class="icons">
+                                        <img src="/_krxuser/img/Icon material-play-circle-outline.webp" alt="영상컨텐츠">
+                                        <img src="/_krxuser/img/icon-etf.webp" alt="ETF">
+                                    </span>
+                                    <p class="list-text">
+                                        <span class="list-category">ETF 강의실</span>
+                                        <span class="list-tit">애니메이션으로 보는 투자실패사례</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="tab-inner-list">
+                                <a href="#lnk">
+                                    <span class="icons">
+                                        <img src="/_krxuser/img/Icon feather-book-open.webp" alt="ebook컨텐츠">
+                                        <img src="/_krxuser/img/icon-elw.webp" alt="ELW">
+                                    </span>
+                                    <p class="list-text">
+                                        <span class="list-category">ELW 강의실</span>
+                                        <span class="list-tit">교육을 시작하며</span>
+                                    </p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="bg-img"></div>
+            <!-- 금육교육 공지사항(최신순으로 정렬, 카테고리 별로 확인 가능) -->
+            <div class="main-cont-wrap">
+                <div class="edu-notice tab-container">
+                    <div class="tab-nav-wrap">
+                        <h3 class="contents-tit">금융교육 공지사항</h3>
+                        <ul class="tab-nav notice">
+                            <li class="on"><a href="#lnk" id="tab4"><span>전체</span></a></li>
+                            <li class="on"><a href="#lnk" id="tab5"><span>금융교육</span></a></li>
+                            <li class="on"><a href="#lnk" id="tab6"><span>파생상품아카데미</span></a></li>
+                            <li class="on"><a href="#lnk" id="tab7"><span>환리스크관리교육</span></a></li>
+                            <li class="on"><a href="#lnk" id="tab8"><span>ETF&amp;ETN</span></a></li>
+                            <li class="on last"><a href="#lnk" id="tab9"><span>ELW</span></a></li>
+                        </ul>
+                    </div>
+                    <ul class="tab-list notice">
+                        <li class="list on">
+                            <ul class="edu-tab-inner">
+                                <li class="edu-tab-inner-list">
+                                    <span class="category-tit">금융교육</span>
+                                    <a href="#lnk">한국거래소 본사 자본시장역사박물관 임시 휴관</a>
+                                    <span class="notice-date"><img src="/_krxuser/img/Icon feather-clock.webp" alt="게시날짜">2022-08-25</span>
+                                </li>
+                                <li class="edu-tab-inner-list">
+                                    <span class="category-tit">금융교육</span>
+                                    <a href="#lnk">2022년 제2기 학부모와 함께하는 초등학생 증권시장교실 안내(모집마감)</a>
+                                    <span class="notice-date"><img src="/_krxuser/img/Icon feather-clock.webp" alt="게시날짜">2022-07-27</span>
+                                </li>
+                                <li class="edu-tab-inner-list">
+                                    <span class="category-tit">금융교육</span>
+                                    <a href="#lnk">2022년도 하계 테마증권교실 모집 안내(모집마감)</a>
+                                    <span class="notice-date"><img src="/_krxuser/img/Icon feather-clock.webp" alt="게시날짜">2022-06-29</span>
+                                </li>
+                                <li class="edu-tab-inner-list">
+                                    <span class="category-tit">금융교육</span>
+                                    <a href="#lnk">한국거래소 본사 자본시장역사박물관 임시 휴관 안내</a>
+                                    <span class="notice-date"><img src="/_krxuser/img/Icon feather-clock.webp" alt="게시날짜">2022-08-25</span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list">
+                            <ul class="edu-tab-inner">
+                                <li class="edu-tab-inner-list">
+                                    <span class="category-tit">금융교육</span>
+                                    <a href="#lnk">한국거래소 본사 자본시장역사박물관 임시 휴관</a>
+                                    <span class="notice-date"><img src="/_krxuser/img/Icon feather-clock.webp" alt="게시날짜">2022-08-25</span>
+                                </li>
+                                <li class="edu-tab-inner-list">
+                                    <span class="category-tit">금융교육</span>
+                                    <a href="#lnk">2022년 제2기 학부모와 함께하는 초등학생 증권시장교실 안내(모집마감)</a>
+                                    <span class="notice-date"><img src="/_krxuser/img/Icon feather-clock.webp" alt="게시날짜">2022-07-27</span>
+                                </li>
+                                <li class="edu-tab-inner-list">
+                                    <span class="category-tit">금융교육</span>
+                                    <a href="#lnk">2022년도 하계 테마증권교실 모집 안내(모집마감)</a>
+                                    <span class="notice-date"><img src="/_krxuser/img/Icon feather-clock.webp" alt="게시날짜">2022-06-29</span>
+                                </li>
+                                <li class="edu-tab-inner-list">
+                                    <span class="category-tit">금융교육</span>
+                                    <a href="#lnk">한국거래소 본사 자본시장역사박물관 임시 휴관 안내</a>
+                                    <span class="notice-date"><img src="/_krxuser/img/Icon feather-clock.webp" alt="게시날짜">2022-08-25</span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list">
+                            <ul class="edu-tab-inner">
+                                <li class="edu-tab-inner-list">
+                                    <span class="category-tit">금융교육</span>
+                                    <a href="#lnk">한국거래소 본사 자본시장역사박물관 임시 휴관</a>
+                                    <span class="notice-date"><img src="/_krxuser/img/Icon feather-clock.webp" alt="게시날짜">2022-08-25</span>
+                                </li>
+                                <li class="edu-tab-inner-list">
+                                    <span class="category-tit">금융교육</span>
+                                    <a href="#lnk">2022년 제2기 학부모와 함께하는 초등학생 증권시장교실 안내(모집마감)</a>
+                                    <span class="notice-date"><img src="/_krxuser/img/Icon feather-clock.webp" alt="게시날짜">2022-07-27</span>
+                                </li>
+                                <li class="edu-tab-inner-list">
+                                    <span class="category-tit">금융교육</span>
+                                    <a href="#lnk">2022년도 하계 테마증권교실 모집 안내(모집마감)</a>
+                                    <span class="notice-date"><img src="/_krxuser/img/Icon feather-clock.webp" alt="게시날짜">2022-06-29</span>
+                                </li>
+                                <li class="edu-tab-inner-list">
+                                    <span class="category-tit">금융교육</span>
+                                    <a href="#lnk">한국거래소 본사 자본시장역사박물관 임시 휴관 안내</a>
+                                    <span class="notice-date"><img src="/_krxuser/img/Icon feather-clock.webp" alt="게시날짜">2022-08-25</span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list">
+                            <ul class="edu-tab-inner">
+                                <li class="edu-tab-inner-list">
+                                    <span class="category-tit">금융교육</span>
+                                    <a href="#lnk">한국거래소 본사 자본시장역사박물관 임시 휴관</a>
+                                    <span class="notice-date"><img src="/_krxuser/img/Icon feather-clock.webp" alt="게시날짜">2022-08-25</span>
+                                </li>
+                                <li class="edu-tab-inner-list">
+                                    <span class="category-tit">금융교육</span>
+                                    <a href="#lnk">2022년 제2기 학부모와 함께하는 초등학생 증권시장교실 안내(모집마감)</a>
+                                    <span class="notice-date"><img src="/_krxuser/img/Icon feather-clock.webp" alt="게시날짜">2022-07-27</span>
+                                </li>
+                                <li class="edu-tab-inner-list">
+                                    <span class="category-tit">금융교육</span>
+                                    <a href="#lnk">2022년도 하계 테마증권교실 모집 안내(모집마감)</a>
+                                    <span class="notice-date"><img src="/_krxuser/img/Icon feather-clock.webp" alt="게시날짜">2022-06-29</span>
+                                </li>
+                                <li class="edu-tab-inner-list">
+                                    <span class="category-tit">금융교육</span>
+                                    <a href="#lnk">한국거래소 본사 자본시장역사박물관 임시 휴관 안내</a>
+                                    <span class="notice-date"><img src="/_krxuser/img/Icon feather-clock.webp" alt="게시날짜">2022-08-25</span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list">
+                            <ul class="edu-tab-inner">
+                                <li class="edu-tab-inner-list">
+                                    <span class="category-tit">금융교육</span>
+                                    <a href="#lnk">한국거래소 본사 자본시장역사박물관 임시 휴관</a>
+                                    <span class="notice-date"><img src="/_krxuser/img/Icon feather-clock.webp" alt="게시날짜">2022-08-25</span>
+                                </li>
+                                <li class="edu-tab-inner-list">
+                                    <span class="category-tit">금융교육</span>
+                                    <a href="#lnk">2022년 제2기 학부모와 함께하는 초등학생 증권시장교실 안내(모집마감)</a>
+                                    <span class="notice-date"><img src="/_krxuser/img/Icon feather-clock.webp" alt="게시날짜">2022-07-27</span>
+                                </li>
+                                <li class="edu-tab-inner-list">
+                                    <span class="category-tit">금융교육</span>
+                                    <a href="#lnk">2022년도 하계 테마증권교실 모집 안내(모집마감)</a>
+                                    <span class="notice-date"><img src="/_krxuser/img/Icon feather-clock.webp" alt="게시날짜">2022-06-29</span>
+                                </li>
+                                <li class="edu-tab-inner-list">
+                                    <span class="category-tit">금융교육</span>
+                                    <a href="#lnk">한국거래소 본사 자본시장역사박물관 임시 휴관 안내</a>
+                                    <span class="notice-date"><img src="/_krxuser/img/Icon feather-clock.webp" alt="게시날짜">2022-08-25</span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list">
+                            <ul class="edu-tab-inner">
+                                <li class="edu-tab-inner-list">
+                                    <span class="category-tit">금융교육</span>
+                                    <a href="#lnk">한국거래소 본사 자본시장역사박물관 임시 휴관</a>
+                                    <span class="notice-date"><img src="/_krxuser/img/Icon feather-clock.webp" alt="게시날짜">2022-08-25</span>
+                                </li>
+                                <li class="edu-tab-inner-list">
+                                    <span class="category-tit">금융교육</span>
+                                    <a href="#lnk">2022년 제2기 학부모와 함께하는 초등학생 증권시장교실 안내(모집마감)</a>
+                                    <span class="notice-date"><img src="/_krxuser/img/Icon feather-clock.webp" alt="게시날짜">2022-07-27</span>
+                                </li>
+                                <li class="edu-tab-inner-list">
+                                    <span class="category-tit">금융교육</span>
+                                    <a href="#lnk">2022년도 하계 테마증권교실 모집 안내(모집마감)</a>
+                                    <span class="notice-date"><img src="/_krxuser/img/Icon feather-clock.webp" alt="게시날짜">2022-06-29</span>
+                                </li>
+                                <li class="edu-tab-inner-list">
+                                    <span class="category-tit">금융교육</span>
+                                    <a href="#lnk">한국거래소 본사 자본시장역사박물관 임시 휴관 안내</a>
+                                    <span class="notice-date"><img src="/_krxuser/img/Icon feather-clock.webp" alt="게시날짜">2022-08-25</span>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 메인 모바일 공지사항 전체 최신 공지사항만 보여집니다.
+                자세히 보러가기 클릭 시 공지사항 페이지로 이동 -->
+                <div class="mb-notice">
+                    <div class="mb-notice-top">
+                        <h3 class="contents-tit">금융교육 공지사항</h3>
+                        <a href="#lnk">자세히 보러가기<img src="/_krxuser/img/mb-gotopage.webp" alt=""></a>
+                    </div>
+                    <ul class="mb-notice-inner">
+                        <li class="mb-notice-list">
+                            <span class="category-tit">금융교육</span>
+                            <a href="#lnk">한국거래소 본사 자본시장역사박물관 임시 휴관</a>
+                            <span class="notice-date"><img src="/_krxuser/img/Icon feather-clock.webp" alt="게시날짜">2022-08-25</span>
+                        </li>
+                        <li class="mb-notice-list">
+                            <span class="category-tit">금융교육</span>
+                            <a href="#lnk">2022년 제2기 학부모와 함께하는 초등학생 증권시장교실 안내(모집마감)</a>
+                            <span class="notice-date"><img src="/_krxuser/img/Icon feather-clock.webp" alt="게시날짜">2022-07-27</span>
+                        </li>
+                        <li class="mb-notice-list">
+                            <span class="category-tit">금융교육</span>
+                            <a href="#lnk">2022년도 하계 테마증권교실 모집 안내(모집마감)</a>
+                            <span class="notice-date"><img src="/_krxuser/img/Icon feather-clock.webp" alt="게시날짜">2022-06-29</span>
+                        </li>
+                        <li class="mb-notice-list">
+                            <span class="category-tit">금융교육</span>
+                            <a href="#lnk">한국거래소 본사 자본시장역사박물관 임시 휴관 안내</a>
+                            <span class="notice-date"><img src="/_krxuser/img/Icon feather-clock.webp" alt="게시날짜">2022-08-25</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 슬라이드 클릭 시 팝업 -->
+                <div class="slide">
+                    <div class="slide-tit-wrap">
+                        <h3 class="contents-tit">홍보존</h3>
+                        <div class="swiper-top">
+                            <div class="pagi-wrap">
+                                <div class="swiper-pagination"></div>
+                            </div>
+                            <div class="btn-wrap">
+                                    <div class="prev arrow"><img src="/_krxuser/img/Icon ionic-ios-arrow-dropleft.webp" alt="이전"></div>
+                                    <div class="next arrow"><img src="/_krxuser/img/Icon ionic-ios-arrow-dropright.webp" alt="다음"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-container">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide slide1">
+                                <img src="/_krxuser/img/slide-pics.webp" alt="실감형 VR 투어">
+                            </li>
+                            <li class="swiper-slide slide2">
+                                <img src="/_krxuser/img/slide-pics.webp" alt="실감형 VR 투어">
+                            </li>
+                            <li class="swiper-slide slide3">
+                                <img src="/_krxuser/img/slide-pics.webp" alt="실감형 VR 투어">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 홍보관(서울) >홍보관 관람안내 페이지 이동
+            박물관(부산) > 박물관 관람안내 페이지 이동( 홍보관 동일 )-->
+        <div class="branch">
+            <div class="brc-wrap">
+                <div class="seoul">
+                    <div class="seoul-inner">
+                        <div class="brc-tit">
+                            <h3 class="contents-tit">홍보관(서울)</h3>
+                            <a href="#lnk">자세히 보러가기<img src="/_krxuser/img/gotopage.webp" alt=""></a>
+                        </div>
+                        <a href="#lnk" class="cyber">
+                            <img src="/_krxuser/img/branch-seoul.webp" alt="홍보관(서울)">
+                            <div class="hover">
+                                <span>사이버 홍보관 입장</span>
+                            </div>
+                        </a>
+                        <p>한국거래소의 역사를 한눈에 조망하는 다양한 전시 관람과 자본시장에 대한 이해를 높일 수 있는 금융교육프로그램이 진행되는 증권파생상품시장 종합체험공간입니다.</p>
+                    </div>
+                    </div>
+                <div class="busan">
+                    <div class="busan-inner">
+                        <div class="brc-tit">
+                            <h3 class="contents-tit">박물관(부산)</h3>
+                            <a href="#lnk">자세히 보러가기<img src="/_krxuser/img/gotopage.webp" alt=""></a>
+                        </div>
+                        <a href="#lnk" class="cyber">
+                            <img src="/_krxuser/img/branch-busan.webp" alt="홍보관(서울)">
+                            <div class="hover hover2">
+                                <span>사이버 박물관 입장</span>
+                            </div>
+                        </a>
+                        <p>한국거래소 자본시장역사박물관은 4,500여 점의 유물을 소장하고 있으며, 우리나라 자본시장의 지난 발자취를 살펴 볼 수 있는 금융·경제 전문1종 박물관입니다.</p>
+                    </div>        
+                </div>
+            </div>
+        </div>
+        <!-- 클릭 시 팝업으로 게임창  -->
+        <div class="game">
+            <div class="game-wrap">
+                <h3 class="contents-tit">신나는 경제게임</h3>
+                <ul class="game-list">
+                    <li>
+                        <a href="#lnk" class="game-link"><img src="/_krxuser/img/invest-game.webp" alt="모의증권투자게임"></a>
+                    </li>
+                    <li>
+                        <a href="#lnk" class="game-link"><img src="/_krxuser/img/trading-game.webp" alt="trading floor"></a>
+                    </li>
+                    <li>
+                        <a href="#lnk" class="game-link"><img src="/_krxuser/img/stock-game.webp" alt="황비웅비의 주식게임"></a>
+                    </li>
+                    <li>
+                        <a href="#lnk" class="game-link"><img src="/_krxuser/img/save-game.webp" alt="한국거래소를 지켜라"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer data-include-file="/_krxuser/include/footer.html" class="header-wrap includeJs"></footer>
+    <script src="/_krxuser/js/include.js"></script>
+    <script src="/_krxuser/js/header.js"></script>
+    <script src="/_krxuser/js/main.js"></script>
+    <script src="/_krxuser/js/swiper.min.js"></script>
+
+</body>
+</html>
