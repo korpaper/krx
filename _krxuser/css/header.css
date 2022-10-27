@@ -7,7 +7,7 @@ header{
     position: fixed; 
     left: 0; 
     top: 0; 
-    z-index: 9999;
+    z-index: 200;
     transition: 1s;
     background: #fff;
 }
@@ -207,17 +207,12 @@ nav>ul>li>a:hover{
     margin-right: 26px;
 }
 
-.menu{position: relative; width: 19px; height: 23px; cursor:pointer;}
-.menu span{position: absolute; left: 0; width: 19px; height: 2px; background: #707070;}
-.menu span:nth-of-type(1){top:0;}
-.menu span:nth-of-type(2){top:7px;}
-.menu span:nth-of-type(3){bottom:7px;}
+.menu-open{position: relative; width: 19px; height: 23px; cursor:pointer;}
+.menu-open span{position: absolute; left: 0; width: 19px; height: 2px; background: #707070;}
+.menu-open span:nth-of-type(1){top:0;}
+.menu-open span:nth-of-type(2){top:7px;}
+.menu-open span:nth-of-type(3){bottom:7px;}
 
-/* 모바일 gnb */
-/* 모바일 gnb 상단 */
-.mb-menu{
-    display: none;
-}
 
 @media(max-width : 1024px){
     .pc-header{
@@ -227,7 +222,185 @@ nav>ul>li>a:hover{
         display: block;
     }
 }
+/* 모바일 gnb 상단 */
+.mb-nav>li.active3>a{
+    color: #00a8cd;
+    font-weight: bold;
+}
+.mb-depth2>li.active4>a{
+    background: #00a8cd;
+    color: #fff;
+}
+.mb-depth3>li.active5-1>a{
+    font-weight: bold;
+}
+.mb-depth4>li.active5>a{
+    font-weight: bold;
+}
+.mb-nav>li.active .mb-depth2{
+    z-index: 1;
+}
 
+
+/* 모바일 gnb 상단 */
+.mb-menu{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.mb-menu .mb-menu-wrap{
+    width: 100%;
+    height: 100px;
+    color: #fff;
+}
+
+.mb-menu .mb-nav-wrap { 
+    background-color: #fff;
+}
+.mb-menu .mb-menu-wrap .mb-menu-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 30px 0 23px;
+    box-sizing: border-box;
+    background: #00a8cd;
+}
+.mb-menu .mb-menu-wrap .mb-menu-top .menu-top-left{
+    display: flex;
+}
+.mb-menu .mb-menu-wrap .mb-menu-top .menu-top-right{
+    display: flex;
+}
+.menu-top-right li:nth-of-type(1){
+    margin-right: 25px;
+}
+.menu-close{position: relative; width: 19px; height: 23px; cursor:pointer;}
+.menu-close span{position: absolute; left: 0; width: 19px; height: 2px; background: #fff;}
+.menu-close span:nth-of-type(1){top:0;}
+.menu-close span:nth-of-type(2){top:7px;}
+.menu-close span:nth-of-type(3){bottom:7px;}
+
+.menu-top-bottom{
+    display: flex;
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+}
+.menu-top-bottom li{
+    width: 100%;
+    background: #000;
+    font-weight: bold;
+}
+.menu-top-bottom li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+    text-align: center;
+}
+.menu-top-bottom li span{
+    color: #00b4d5;
+    font-weight: bold;
+}
+/* 모바일 gnb 하단 */
+.mb-nav{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #f7f7f7;
+    overflow-y: scroll;
+}
+.mb-nav>li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    padding: 20px 49px 20px 23px;
+    box-sizing: border-box;
+    white-space: nowrap;
+}
+.mb-nav>li>a{
+    line-height: 26px;
+    font-size: 18px;
+}
+.mb-nav>li>a>span{
+    width: 12px;
+    height: 12px;
+    padding: 0 0 10px 5px;
+}
+.mb-depth2-wrap{
+    position: absolute;
+    left: 40%;
+    top: 0;
+    box-sizing: border-box;
+    width: 60%;
+    height: 100%;
+    background: #fff;
+    color: #fff;
+}
+.mb-depth2{
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    color: #fff;
+}
+.mb-depth2>li{
+    background: #313946;
+    border-top: 1px solid #fff;
+}
+.mb-depth2>li:last-child{
+    border-bottom: none;
+}
+.mb-depth2>li>a{ 
+    padding: 12px 25px;
+    display: block;
+}
+
+.mb-depth3{
+    display: none;
+    background: #f7f7f7;
+    color: #000;
+}
+.mb-depth3>li>a{
+    display: block;
+    padding: 12px 25px;
+    border-top: 1px dotted rgba(0, 0, 0, 0.1);
+}
+.mb-depth4{
+    display: none;
+    background: #fff;
+}
+.mb-depth4>li{
+    display: flex;
+    align-items: center;
+    border-top: 1px dotted rgba(0, 0, 0, 0.1);
+}
+.mb-depth4>li>a{
+    display: block;
+    padding: 9px 7px;
+}
+.mb-depth4>li::before{
+    display: inline-block;
+    content: "";
+    width: 4px;
+    height: 4px;
+    margin-left: 35px;
+    border-radius: 50%;
+    background: #000;
+}
 
 
 
