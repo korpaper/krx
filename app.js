@@ -98,3 +98,52 @@ app.get('/easytoknow', function(req, res) {
 app.get('/basic', function(req, res) {
     res.sendFile(__dirname + "/html/finance-edu/krx-academy/risk/basic.html");
 });
+
+// 환리스크관리 강의실 > 환리스크 관리의 기본개념
+app.get('/work-level', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/krx-academy/risk/work-level.html");
+});
+
+// 환리스크관리 강의실 > 환리스크 관리 우수기업사례
+app.get('/good-corp', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/krx-academy/risk/good-corp.html");
+});
+
+// 환리스크관리 강의실 > 통화선물 상품안내
+app.get('/currency', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/krx-academy/risk/currency.html");
+});
+
+// 환리스크관리 강의실 > 카툰마당 > 선물옵션이야기
+app.get('/ct-op', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/krx-academy/risk/cartoons/ct-op.html");
+});
+
+// 환리스크관리 강의실 > 카툰마당 > 통화선물이야기
+app.get('/ct-cur', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/krx-academy/risk/cartoons/ct-cur.html");
+});
+
+// 환리스크관리 강의실 > 카툰마당 > 채권선물이야기
+app.get('/ct-bond', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/krx-academy/risk/cartoons/ct-bond.html");
+});
+
+// 환리스크관리 강의실 > 카툰마당 > 금선물이야기
+app.get('/ct-gold', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/krx-academy/risk/cartoons/ct-gold.html");
+});
+
+// 환리스크관리 강의실 > 카툰마당 > 통화옵션이야기
+app.get('/ct-curop', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/krx-academy/risk/cartoons/ct-curop.html");
+});
+
+// ETF 강의실 > ETF, ETN 정확하게 이해하기
+app.get('/etf-etn', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/krx-academy/etf/etf-etn.html");
+});
+
+
+
+
