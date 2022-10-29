@@ -20,7 +20,7 @@ $(document).ready(function(){
     //헤더
     var scUp ="";
     var scDown ="";
-    //스크롤 움직이면 뭔가 함
+    
     $(window).scroll(function() {
         setTimeout(function(){
             scUp = $(window).scrollTop();

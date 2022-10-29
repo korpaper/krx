@@ -107,6 +107,22 @@ nav>ul>li>a>span{
     height: 12px;
     padding-left: 3px;
 }
+
+.last-sub{
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+}
+.last-sub>li>a{
+    display: block;
+    width: 110%;
+}
+.last-sub>li>a>span{
+    width: 12px;
+    height: 12px;
+    padding-left: 3px;
+}
+
 .sub-bg{
     display: none;
     position: absolute;

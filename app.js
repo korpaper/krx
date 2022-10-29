@@ -144,6 +144,137 @@ app.get('/etf-etn', function(req, res) {
     res.sendFile(__dirname + "/html/finance-edu/krx-academy/etf/etf-etn.html");
 });
 
+// ETF 강의실 > 애니메이션으로 보는 ETF
+app.get('/ani-etf', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/krx-academy/etf/ani-etf.html");
+});
 
+// ETF 강의실 > 애니메이션으로 보는 투자사례
+app.get('/ani-invest', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/krx-academy/etf/ani-invest.html");
+});
 
+// ETF 강의실 > ETF의 이해 > ETF 상품이해
+app.get('/about-etf-video', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/krx-academy/etf/about-etf/about-etf-video.html");
+});
 
+// ETF 강의실 > ETF의 이해 > ETF의 제도
+app.get('/etf-system', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/krx-academy/etf/about-etf/etf-system.html");
+});
+
+// ETF 강의실 > ETF의 이해 > 시장참가자 및 역할
+app.get('/etf-market', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/krx-academy/etf/about-etf/etf-market.html");
+});
+
+// ETF 강의실 > ETF의 이해 > 투자지표와 투자위험
+app.get('/etf-risk', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/krx-academy/etf/about-etf/etf-risk.html");
+});
+
+// ETF 강의실 > ETF의 이해 > 실전투자
+app.get('/etf-actual', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/krx-academy/etf/about-etf/etf-actual.html");
+});
+
+// ETF 강의실 > ETF 퀴즈
+app.get('/etf-quiz', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/krx-academy/etf/etf-quiz.html");
+});
+
+// ETF 강의실 > 책으로 배우는 ETF
+app.get('/etf-book', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/krx-academy/etf/etf-book.html");
+});
+
+// ETN 강의실 > 책으로 배우는 ETN
+app.get('/etn-book', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/krx-academy/etn/etn-book.html");
+});
+
+// ETN 강의실 > 동영상으로 배우는 ETN
+app.get('/etn-video', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-enpmdu/krx-academy/etn/etn-video.html");
+});
+
+// ELW 강의실 > 동영상으로 배우는 ETN
+app.get('/elw-guide', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/krx-academy/elw/elw-guide.html");
+});
+
+// ELW 강의실 > ELW의 이해 > 상품이해
+app.get('/about-elw-video', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/krx-academy/elw/about-elw/about-elw-video.html");
+});
+
+// ELW 강의실 > ELW의 이해 > 제도
+app.get('/elw-system', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/krx-academy/elw/about-elw/elw-system.html");
+});
+
+// ELW 강의실 > ELW의 이해 > 유동성공급자제도
+app.get('/elw-liquidity', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/krx-academy/elw/about-elw/elw-liquidity.html");
+});
+
+// ELW 강의실 > ELW의 이해 > 투자위험
+app.get('/elw-risk', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/krx-academy/elw/about-elw/elw-risk.html");
+});
+
+// ELW 강의실 > ELW의 이해 > 실전투자
+app.get('/elw-actual', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/krx-academy/elw/about-elw/elw-actual.html");
+});
+
+// ELW 강의실 > 애니메이션으로 보는 투자사례
+app.get('/elw-ani', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/krx-academy/elw/elw-ani.html");
+});
+
+// ELW 강의실 > ELW 퀴즈
+app.get('/elw-quiz', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/krx-academy/elw/elw-quiz.html");
+});
+
+// KOBA워런트 강의실 > 강의안내
+app.get('/koba-guide', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/krx-academy/koba/koba-guide.html");
+});
+
+// KOBA워런트 강의실 > KOBA워런트의 이해 > 상품이해
+app.get('/about-koba-video', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/krx-academy/koba/about-koba/about-koba-video.html");
+});
+
+// KOBA워런트 강의실 > KOBA워런트의 이해 > 제도의 이해
+app.get('/koba-system', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/krx-academy/koba/about-koba/koba-system.html");
+});
+
+// KOBA워런트 강의실 > KOBA워런트의 이해 > 가격구조와 투자지표
+app.get('/koba-price', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/krx-academy/koba/about-koba/koba-price.html");
+});
+
+// KOBA워런트 강의실 > KOBA워런트의 이해 > 투자위험
+app.get('/koba-risk', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/krx-academy/koba/about-koba/koba-risk.html");
+});
+
+// KOBA워런트 강의실 > KOBA워런트의 이해 > 투자전략
+app.get('/koba-stra', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/krx-academy/koba/about-koba/koba-stra.html");
+});
+
+// KOBA워런트 강의실 > KOBA워런트 투자사례
+app.get('/koba-invest', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/krx-academy/koba/koba-invest.html");
+});
+
+// ESG 강의실
+app.get('/esg', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/krx-academy/esg.html");
+});
