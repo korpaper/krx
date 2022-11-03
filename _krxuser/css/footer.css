@@ -25,10 +25,11 @@ footer{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    letter-spacing: -1.2px;
 }
 .fnb li::after{
-    content: "｜";
-    padding: 0 10px;
+    content: "|";
+    padding: 0 17px;
     vertical-align: top;
 }
 .last::after{
@@ -69,9 +70,18 @@ footer{
     margin: 0 auto;
     word-break: keep-all;
     box-sizing: border-box;
+    
 }
-.footer-bottom p{
+.footer-bottom p span{
     line-height: 1.8;
+}
+.footer-bottom-inner{
+    line-height: 30px;
+    letter-spacing: -1.2px;
+}
+
+.fnb li a:hover{
+    color: #1d1d1d;
 }
 
 /* 모바일 푸터 */
@@ -110,17 +120,17 @@ footer{
     font-size: 14px;
 }
 .mb-fnb1 li:nth-of-type(1)::after{
-    content: "｜";
+    content: "|";
     padding: 0 20px;
     vertical-align: top;
 }
 .mb-fnb2 li:nth-of-type(1)::after{
-    content: "｜";
+    content: "|";
     padding: 0 10px;
     vertical-align: top;
 }
 .mb-fnb2 li:nth-of-type(2)::after{
-    content: "｜";
+    content: "|";
     padding: 0 10px;
     vertical-align: top;
 }

@@ -278,3 +278,161 @@ app.get('/koba-invest', function(req, res) {
 app.get('/esg', function(req, res) {
     res.sendFile(__dirname + "/html/finance-edu/krx-academy/esg.html");
 });
+
+// 박물관(부산)
+// 박물관 관람안내
+app.get('/busan-guide', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/busan/busan-guide.html");
+});
+
+// 박물관 상설증권교실 > 프로그램안내/신청
+app.get('busan-per-apply', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/busan/permanent-class/busan-per-apply.html");
+});
+
+//신청 달력
+
+// 박물관 상설증권교실 > 신청서 작성
+app.get('/busan-per-application', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/busan/permanent-class/busan-per-application.html");
+});
+
+// 박물관 상설증권교실 > 신청내역 조회
+app.get('/busan-per-inquiry', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/busan/permanent-class/busan-per-inquiry.html");
+});
+
+// 박물관 테마증권교실 > 프로그램안내/신청
+app.get('/busan-them-apply', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/busan/thema-class/busan-them-apply.html");
+});
+
+//신청달력???????
+
+// 박물관 테마증권교실 > 신청서 작성
+app.get('/busan-them-application', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/busan/thema-class/busan-them-application.html");
+});
+
+// 박물관 테마증권교실 > 신청내역 조회
+app.get('/busan-them-inquiry', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/busan/thema-class/busan-them-inquiry.html");
+});
+
+// 홍보관(서울)
+// 홍보관 관람안내
+app.get('/seoul-guide', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/seoul/seoul-guide.html");
+});
+
+// 홍보관 상설증권교실 > 프로그램안내/신청
+app.get('/seoul-per-apply', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/seoul/permanent-class/seoul-per-apply.html");
+});
+
+//신청 달력
+
+// 홍보관 상설증권교실 > 신청서 작성
+app.get('/seoul-per-application', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/seoul/permanent-class/seoul-per-application.html");
+});
+
+// 홍보관 상설증권교실 > 신청내역 조회
+app.get('/seoul-per-inquiry', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/seoul/permanent-class/seoul-per-inquiry.html");
+});
+
+// 홍보관 테마증권교실 > 프로그램안내/신청
+app.get('/seoul-them-apply', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/seoul/thema-class/seoul-them-apply.html");
+});
+
+//신청달력???????
+
+// 홍보관 테마증권교실 > 신청서 작성
+app.get('/seoul-them-application', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/seoul/thema-class/seoul-them-application.html");
+});
+
+// 홍보관 테마증권교실 > 신청내역 조회
+app.get('/seoul-them-inquiry', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/seoul/thema-class/seoul-them-inquiry.html");
+});
+
+// 찾아가는 자본시장 교육 > 프로그램안내/신청
+app.get('/seoul-visit-apply', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/seoul/visit-edu/seoul-visit-apply.html");
+});
+
+// 찾아가는 자본시장 교육 > 신청서 작성
+app.get('/seoul-visit-application', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/seoul/visit-edu/seoul-visit-application.html");
+});
+
+// 찾아가는 자본시장 교육 > 신청내역 조회
+app.get('/seoul-visit-inquiry', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/seoul/visit-edu/seoul-visit-inquiry.html");
+});
+
+//현장강의
+// ETF/ETN 동영상강의
+app.get('/lec-etf-etn', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/lecture/lec-etf-etn.html");
+});
+
+// ELW 동영상강의
+app.get('/lec-elw', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/lecture/lec-elw.html");
+});
+
+// KOBA워런트 동영상강의
+app.get('/lec-koba', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/lecture/lec-koba.html");
+});
+
+// 환리스크 관리 > 통화선물을 이용한 환리스크 관리
+app.get('/lec-risk-cur', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/lecture/lec-risk/lec-risk-cur.html");
+});
+
+// 환리스크 관리 > 중소기업 환리스크 관리가이드(심화과정)
+app.get('/lec-risk-corp', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/lecture/lec-risk/lec-risk-corp.html");
+});
+
+//커뮤니티
+//공지사항 > 공지사항 리스트
+app.get('/notice-list', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/community/notice/notice-list.html");
+});
+
+//공지사항 > 공지사항 글보기
+app.get('/notice-open', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/community/notice/notice-open.html");
+});
+
+//Q&A > 글쓰기
+app.get('/qna-write', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/community/qna/qna-write.html");
+});
+
+//Q&A > 내 Q&A 목록
+app.get('/qna-list', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/community/qna/qna-list.html");
+});
+
+//Q&A > 답변 글 보기
+app.get('/qna-answer', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/community/qna/qna-answer.html");
+});
+
+//마이페이지
+//강의예약확인
+app.get('/mypage', function(req, res) {
+    res.sendFile(__dirname + "/html/mypage.html");
+});
+
+//로그인
+app.get('/login', function(req, res) {
+    res.sendFile(__dirname + "/html/login.html");
+});

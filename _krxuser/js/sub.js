@@ -55,15 +55,28 @@ $('.begin-tab-nav.op-va > li').on('click keyup',function(e){
     }
 });
 
-
-
-
-// 알기쉬운 파생상품 탭
-
-
 // 알기쉬운 파생상품 아코디언
 $(".etk-inner-cont").hide();
     $(".etk-title").click(function() {
         $(this).next(".etk-inner-cont").stop().slideToggle(300);
         $(this).next(".etk-inner-cont").siblings(".etk-inner-cont").slideUp(300); // 1개씩 펼치기
     });
+
+//qna 글자 수 제한
+$("#qna-title").keyup(function(e) {
+    var content = $(this).val();
+    $("#qna-title").text("(" + content.length + " / 최대 45자)");
+    if (content.length > 45) {
+        alert("최대 45자까지 입력 가능합니다.");
+        $(this).val(content.substring(0, 45));
+        $('#qna-title').text("(45 / 최대 45자)");
+    }
+});
+// 영상 모달팝업
+$('.open-md').click(function(){
+    $('.modal-wrap').css('display', 'block');
+});
+
+$('.close-btn').click(function(){
+    $('.modal-wrap').css('display', 'none');
+});

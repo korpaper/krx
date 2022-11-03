@@ -20,6 +20,8 @@
     align-items: center;
     padding: 0 26px;
     box-sizing: border-box;
+    line-height: 1.5;
+    color: #313946;
 }
 .side-quick>ul>li::after{
     display: block;
@@ -48,9 +50,6 @@
 .side-quick>ul>li:last-child{
     padding-bottom: 30px;
     box-sizing: border-box;
-}
-.side-quick>ul>li>a{
-
 }
 
 .search-main{
@@ -168,6 +167,7 @@
     margin-top: 33px;
     font-size: 22px;
     text-align: center;
+    color: #313946;
 }
 .sc-hasresult p{
     margin-bottom: 121px;

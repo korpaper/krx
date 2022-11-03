@@ -1,0 +1,77 @@
+.log-main{
+    max-width: 1280px;
+    margin: 200px auto 171px;
+}
+
+.login-wrap{
+    padding: 86px 322px 84.5px 322px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+.login ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.log-title{
+    padding-bottom: 20px;
+    font-size: 40px;
+    line-height: 1.58;
+    letter-spacing: normal;
+    font-weight: 500;
+    color: #00a8cd;
+    box-sizing: border-box;
+}
+.log-desc{
+    margin-bottom: 80px;
+    font-size: 18px;
+    line-height: 1.44;
+    letter-spacing: -0.9px;
+    color: #313946;
+    white-space: nowrap;
+}
+.log-btn{
+    display: flex;
+}
+.log-btn a:first-of-type{
+    margin-right: 40px;
+}
+
+@media (max-width : 1024px){
+    .log-main{
+        width: 100%;
+        margin: 37px 0 78.5px 0;
+    }
+    .login-wrap{
+        padding: 0 36px 0 36px;
+        border: none;
+    }
+    .login ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .log-title{
+        font-size: 30px;
+        line-height: 1.47;
+    }
+    .log-desc{
+        margin-bottom: 70px;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: -0.8px;
+        white-space: initial;
+        text-align: center;
+    }
+    .log-btn{
+        display: flex;
+        flex-direction: column;
+    }
+    .log-btn a:first-of-type{
+        margin-right: 0;
+        margin-bottom: 25.6px;
+    }
+    .log-btn a img{
+        width: 100%;
+    }
+}

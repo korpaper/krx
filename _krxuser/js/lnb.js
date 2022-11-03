@@ -2,11 +2,12 @@ $(document).ready(function(){
 
     let isActiveDepth = "dep2";
     $('.dep2>li>a').click(function(e){
-        const clickedValue = $(this).siblings().attr('class').split(' ')[1];
+        const clickedValue = $(this).siblings().attr('class');
+        // const clickedValue = $(this).siblings().attr('class').split(' ')[1];
         // if (clickedValue !== "deal" && isActiveDepth !== clickedValue) {
         if (isActiveDepth !== clickedValue) {
             $(`.dep2-wrap.${clickedValue}`).slideDown(0);
-            $(`.dep2-wrap.${clickedValue}`).css('z-index', '2');
+            $(`.dep2-wrap.${clickedValue}`);
                 $(`.dep2-wrap.${isActiveDepth}`).slideUp(0);
                 isActiveDepth = clickedValue;
         }

@@ -16,6 +16,7 @@ body {
     font-size: 16px;
     letter-spacing: -1px;
     overflow-x: hidden;
+    line-height: normal;
 }
 
 /* 콘텐츠 제목(h3) */
@@ -23,6 +24,7 @@ body {
     position: relative;
     font-size: 22px;
     font-weight: bold;
+    letter-spacing: -1.1px;
     color: #313946;
 }
 .contents-tit::before{

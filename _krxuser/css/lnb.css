@@ -40,8 +40,7 @@
 .dep2>li>a{
     display: block;
     width: 100%;
-    height: 50px;
-    padding: 15px 26px;
+    padding: 11px 26px;
     background:#313946;
     box-sizing: border-box;
 }
@@ -55,14 +54,16 @@
 .dep3>li{
     width: 100%;
     border-bottom: 1px dotted rgba(0, 0, 0, 0.1);
+    letter-spacing: -0.9px;
 }
 .dep3>li>a{
     display: block;
     width: 100%;
-    height: 50px;
-    padding: 15px 26px;
+    height: 100%;
+    padding: 11px 26px;
     background:#f7f7f7;
     box-sizing: border-box;
+    letter-spacing: -0.9px;
 }
 
 .dep4{
@@ -82,12 +83,15 @@
 }
 .dep4>li{
     width: 100%;
-    border-bottom: 1px dotted rgba(0, 0, 0, 0.1);}
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.1);
+    letter-spacing: -0.8px;
+}
 .dep4>li>a{
     display: block;
     width: 100%;
     height: 50px;
-    padding: 15px 33px;
+    padding: 11px 33px;
     background:#fff;
     box-sizing: border-box;
+    letter-spacing: -0.8px;
 }
