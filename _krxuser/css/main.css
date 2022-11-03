@@ -162,6 +162,7 @@
     .center-quick ul li .icon-text{
         width: 56px;
         line-height: 17px;
+        letter-spacing: -0.75px;
     }
     .center-quick ul li:nth-of-type(-n + 2){
         padding-top: 10px;
@@ -374,6 +375,7 @@
     .tab-inner .tab-inner-list .list-text .list-tit{
         padding-top: 8px;
         line-height: 24px;
+        letter-spacing: -1.2px;
     }
     .bg-img{
         position: absolute;
@@ -499,6 +501,7 @@
 .mb-notice .mb-notice-inner .mb-notice-list .category-tit{
     width: 10%;
     color: #00a8cd;
+    letter-spacing: -1.2px;
 }
 .mb-notice .mb-notice-inner .mb-notice-list a{
     width: 65%;
@@ -507,9 +510,11 @@
     overflow: hidden;
     text-overflow: ellipsis;
     letter-spacing: -0.8px;
+    color: #313946;
 }
 .mb-notice .mb-notice-inner .mb-notice-list .notice-date{
     width: 15%;
+    color: #313946;
 }
 .mb-notice .mb-notice-inner .mb-notice-list .notice-date img{
     display: inline-block;
@@ -561,10 +566,12 @@
     .mb-notice .mb-notice-inner .mb-notice-list .category-tit{
         width: 100%;
         color: #00a8cd;
+        line-height: 1.5;
     }
     .mb-notice .mb-notice-inner .mb-notice-list a{
         width: 100%;
         padding: 5px 0 15px 0;
+        line-height: 1.5;
     }
     .mb-notice .mb-notice-inner .mb-notice-list .notice-date{
         width: 100px;

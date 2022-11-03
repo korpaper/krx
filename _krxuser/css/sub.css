@@ -177,7 +177,6 @@
     box-sizing: border-box;
     font-size: 14px;
     font-weight: bold;
-    line-height: 1.43;
     letter-spacing: -1.05px;
 }
 .title{
@@ -236,6 +235,7 @@
     }
     .sub-navi .navi>li{
         white-space: nowrap;
+        line-height: 1.46;
     }
     .sub-navi .navi>li:nth-of-type(-n + 2){
         display: none;
@@ -256,7 +256,9 @@
     .title{
         line-height: 1.44;
     }
-    
+    .chap{
+    line-height: 1.43;
+    }
 }
 
 /* 초보투자자 교실 beginner */
@@ -532,6 +534,7 @@
     color: #00a8cd;
     font-size: 18px;
     box-sizing: border-box;
+    letter-spacing: -0.9px;
 }
 .txt-cont-tit>img{
     padding-right: 12px;
@@ -575,6 +578,7 @@
         color: #00a8cd;
         font-size: 18px;
         box-sizing: border-box;
+        line-height: 1.44;
     }
     .txt-cont-tit>img{
         width: 28px;
@@ -674,6 +678,7 @@
 .blue{
     margin-right: 48.5px;
     color: #00a8cd;
+    letter-spacing: -1.2px;
 }
 .blue2{
     color: #00a8cd;
@@ -699,6 +704,7 @@
     color: #00a8cd;
     text-align: left;
     font-size: 16px;
+    letter-spacing: -0.8px;
 }
 .design-table caption::before{
     content: "";
@@ -784,7 +790,9 @@
         height: 39px;
         border-bottom:1px solid #9d9d9d;
     }
-    
+    .design-table caption{
+        line-height: 1.5;
+    }
 }
 
 .desc>img{
@@ -853,7 +861,9 @@
 .btmB{
     border-bottom:1px solid #9d9d9d;
 }
-.blockPT{margin-top: 20px;}
+.blockPT{
+    margin-top: 20px;
+}
 
 .design-table.fifthT{
     margin-top: 40px;
@@ -985,6 +995,13 @@ table{
 }
 
 @media (max-width : 1024px){
+    table{
+        line-height: 1.43;
+        letter-spacing: -0.7px;
+    }
+    .desc>ul>li{
+        line-height: 1.75;
+    }
     .begin-tit.fut-deal{
         width: 50%;
     }
@@ -997,6 +1014,12 @@ table{
     .flex-img>img{
         width: 100%;
         margin-top: 20px;
+    }
+    .desc-txt, .desc-txt1, .desc-txt2{
+        line-height: 1.75;
+    }
+    .desc-txt.blockPT{
+        margin-top: 0;
     }
 }
 
@@ -1066,6 +1089,7 @@ table{
 }
 .brc-txt .desc-txt, .brc-desc{
     padding: 0 200px 0 61px;
+    letter-spacing: -1.2px;
 }
 .brc-txt{
     line-height: normal;
@@ -1084,9 +1108,11 @@ table{
     }
     .brc-title{
         font-size: 20px;
+        line-height: 1.45;
     }
     .brc-txt .desc-txt, .brc-desc{
         padding: 0 0 0 0;
+        line-height: 1.5;
     }
     .brc-txt .desc-txt{
         padding: 0 12px 0 39px;
@@ -1145,6 +1171,7 @@ table{
 .box-top>span{
     font-size: 18px;
     color: #444444;
+    letter-spacing: -1.35px;
 }
 .box-top>a{
     width: 42px;
@@ -1261,12 +1288,17 @@ table{
 
 .app-inner .txt-cont-tit{
     display: none;
+    line-height: 1.44;
+    letter-spacing: -0.9px;
 }
 .app-inner3 .txt-cont-tit{
     display: none;
 }
 
 @media (max-width : 1024px){
+    .box-top>span{
+        line-height: 1.44;
+    }
     .app-inner .txt-cont-tit{
         display: block;
         padding: 0 0 2px 0;
@@ -1670,6 +1702,9 @@ table{
     .desc.them .det-type>ul>li{
         padding: 10px 0;
     }
+    .desc.them .det-type>ul>li>span{
+        line-height: 1.75;
+    }
     .desc.them .desc-txt{
         padding-left: 30px;
     }
@@ -1780,6 +1815,9 @@ table{
 }
 .video-child-cont.notice2 .edu-tab-inner .edu-tab-inner-list:nth-of-type(1){
     border-top: none;
+}
+.video-child-cont.notice2 .edu-tab-inner .edu-tab-inner-list a{
+    line-height: 1.5;
 }
 .list-file{
     padding-left: 10px;
