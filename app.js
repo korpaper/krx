@@ -290,7 +290,10 @@ app.get('busan-per-apply', function(req, res) {
     res.sendFile(__dirname + "/html/finance-edu/busan/permanent-class/busan-per-apply.html");
 });
 
-//신청 달력
+// 박물관 상설증권교실 > 신청 달력
+app.get('/busan-per-reservation', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/busan/permanent-class/busan-per-reservation.html");
+});
 
 // 박물관 상설증권교실 > 신청서 작성
 app.get('/busan-per-application', function(req, res) {
@@ -307,7 +310,10 @@ app.get('/busan-them-apply', function(req, res) {
     res.sendFile(__dirname + "/html/finance-edu/busan/thema-class/busan-them-apply.html");
 });
 
-//신청달력???????
+// 박물관 테마증권교실 > 신청달력
+app.get('/busan-them-reservation', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/busan/thema-class/busan-them-reservation.html");
+});
 
 // 박물관 테마증권교실 > 신청서 작성
 app.get('/busan-them-application', function(req, res) {
@@ -330,7 +336,10 @@ app.get('/seoul-per-apply', function(req, res) {
     res.sendFile(__dirname + "/html/finance-edu/seoul/permanent-class/seoul-per-apply.html");
 });
 
-//신청 달력
+// 홍보관 상설증권교실 > 신청달력
+app.get('/seoul-per-reservation', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/seoul/permanent-class/seoul-per-reservation.html");
+});
 
 // 홍보관 상설증권교실 > 신청서 작성
 app.get('/seoul-per-application', function(req, res) {
@@ -347,7 +356,11 @@ app.get('/seoul-them-apply', function(req, res) {
     res.sendFile(__dirname + "/html/finance-edu/seoul/thema-class/seoul-them-apply.html");
 });
 
-//신청달력???????
+// 홍보관 테마증권교실 > 신청달력
+app.get('/seoul-them-reservation', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/seoul/thema-class/seoul-them-reservation.html");
+});
+
 
 // 홍보관 테마증권교실 > 신청서 작성
 app.get('/seoul-them-application', function(req, res) {
@@ -367,6 +380,11 @@ app.get('/seoul-visit-apply', function(req, res) {
 // 찾아가는 자본시장 교육 > 신청서 작성
 app.get('/seoul-visit-application', function(req, res) {
     res.sendFile(__dirname + "/html/finance-edu/seoul/visit-edu/seoul-visit-application.html");
+});
+
+// 찾아가는 자본시장 교육 > 신청달력
+app.get('/seoul-visit-reservation', function(req, res) {
+    res.sendFile(__dirname + "/html/finance-edu/seoul/visit-edu/seoul-visit-reservation.html");
 });
 
 // 찾아가는 자본시장 교육 > 신청내역 조회

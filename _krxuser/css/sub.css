@@ -1816,9 +1816,6 @@ table{
 .video-child-cont.notice2 .edu-tab-inner .edu-tab-inner-list:nth-of-type(1){
     border-top: none;
 }
-.video-child-cont.notice2 .edu-tab-inner .edu-tab-inner-list a{
-    line-height: 1.5;
-}
 .list-file{
     padding-left: 10px;
     box-sizing: border-box;
@@ -2348,4 +2345,19 @@ table{
 .design-table.inqT.myT table td{
     height: 59px;
     padding: 0 0 0 31px;
+}
+
+.back-btn{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 24px 0 0;
+}
+.back-btn a{
+    display: inline-block;
+    padding: 10px;
+    font-size: 13px;
+    letter-spacing: -0.98px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: #444;
 }
