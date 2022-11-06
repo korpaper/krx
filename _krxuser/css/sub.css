@@ -149,6 +149,10 @@
     padding-top: 46px;
     box-sizing: border-box;
 }
+.video-child-cont.risk-basic-wrap{
+    padding-top: 94px;
+    margin-bottom: 10px;
+}
 .video-child-cont>ul{
     display: flex;
     flex-wrap: wrap;
@@ -204,7 +208,7 @@
     .sub-contents-wrap .sub-tit-area{
         width: 100%;
         height: 41px;
-        padding: 0 0 0 0;
+        padding: 11.2px 0 11.2px 0;
         box-sizing: border-box;
     }
     .sub-tit{
@@ -229,7 +233,6 @@
     .sub-navi .navi{
         display: flex;
         justify-content: flex-start;
-        line-height: 41px;
         overflow-y: hidden;
         overflow-x: scroll;
     }
@@ -549,7 +552,7 @@
     line-height: normal;
 }
 .txt-cont ul li{
-    padding: 20px 0;
+    padding: 10px 0;
     letter-spacing: -1.2px;
 }
 .mb-txt-tit{
@@ -664,15 +667,15 @@
     cursor: pointer;
     color: #313946;
 }
-.etk-title title{
-    
-}
 .etk-inner-cont{
-    padding: 15px 10px 99px 80px;
+    padding: 3px 10px 99px 80px;
     border-bottom: 1px solid #DEDEDE;
     box-sizing: border-box;
     background: #fff;
     color: #000;
+}
+.etk-inner-cont.risk-basic-cont{
+    padding: 0 10px 58px 80px;
 }
 
 .blue{
@@ -687,8 +690,12 @@
     padding: 37px 43px;
     line-height: normal;
 }
+.desc.work-level{
+    padding: 0 0;
+    padding: 37px 43px 0 43px;
+}
 .desc>ul>li{
-    padding-bottom: 40px;
+    padding-bottom: 30px;
     box-sizing: border-box;
     letter-spacing: -1.2px;
 }
@@ -772,7 +779,9 @@
     .etk-inner-cont{
         padding: 12px 14px 30px 14px;
     }
-    
+    .etk-inner-cont.risk-basic-cont{
+        padding: 12px 14px 30px 14px;
+    }
     .blue{
         margin-right: 0;
         padding-bottom: 10px;
@@ -793,15 +802,20 @@
     .design-table caption{
         line-height: 1.5;
     }
+    .desc.work-level{
+        padding: 0 0;
+        padding: 0 0 0 0;
+    }
 }
 
 .desc>img{
     margin: 40px 0;
-    overflow-x: scroll;
-    overflow-y: hidden;
+}
+.desc.risk-basic>img{
+    margin: 27px 0;
 }
 .txt-cont-tit.type{
-    padding: 0 0 20px 1px;
+    padding: 0 0 10px 1px;
     box-sizing: border-box;
 }
 .det-type>ul>li{
@@ -835,11 +849,11 @@
 .type-subtit-sub{
     font-size: 14px;
 }
-
-.design-table.thirdT{
-    margin-top: 40px;
+.type-subtit-sub>span{
+    font-size: 14px;
 }
-/* 테이블 검수할 때 다시 보기 */
+
+
 .design-table.thirdT > table > tbody > tr > td{
     /* border-left: 1px solid #9d9d9d; */
 }
@@ -1054,7 +1068,7 @@ table{
     }
     .design-table.nonAcT > table{
         width: 800px;
-        margin-left:  61px;
+        margin-left:  12px;
     }
     .design-table.tenthT{
         width: 100%;
@@ -1071,7 +1085,7 @@ table{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 18px 0 9px 0; 
+    padding: 18px 0 9px 22px; 
 }
 .brc-tit-wrap>a{
     width: 124px;
@@ -1088,7 +1102,7 @@ table{
     font-weight: bold;
 }
 .brc-txt .desc-txt, .brc-desc{
-    padding: 0 200px 0 61px;
+    padding: 0 200px 0 59px;
     letter-spacing: -1.2px;
 }
 .brc-txt{
@@ -2360,4 +2374,17 @@ table{
     border-radius: 10px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     color: #444;
+}
+
+.txt-mgt{
+    margin-top: 40px;
+}
+.txt-mgt20{
+    margin-top: 20px
+}
+.txt-mgt10{
+    margin-top: 10px
+}
+.txt-mgb{
+    margin-bottom: 40px;
 }
