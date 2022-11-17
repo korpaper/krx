@@ -404,17 +404,34 @@
     box-sizing: border-box;
 }
 .book-cont>ul>li>p a{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    
     width: 100px;
     height: 50px;
     padding: 15px 16px;
-    margin-top: 114px;
+    /* margin-top: 10px; */
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     box-sizing: border-box;
     font-size: 13px;
+}
+.open-ebook{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+.open-pdf{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+.open-pdf>img{
+    width: 17px;
+    height: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    opacity: 0.18;
 }
 @media(max-width : 1024px){
     .book-cont{
@@ -451,7 +468,12 @@
         width: 86px;
         height: 37px;
         padding: 8px 8px;
-        margin-top: 71px;
+    }
+    .open-ebook{
+        margin-top: 20px;
+    }
+    .open-pdf{
+        margin-top: 10px;
     }
 }
 
