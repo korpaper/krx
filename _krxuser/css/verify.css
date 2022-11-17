@@ -4,8 +4,12 @@
 }
 
 .login-wrap{
-    padding: 86px 322px 84.5px 322px;
+    
     border: 1px solid rgba(0, 0, 0, 0.1);
+    
+}
+.login{
+    padding: 50px 287px 84.5px 287px;
     box-sizing: border-box;
 }
 .login ul{
@@ -15,50 +19,72 @@
 }
 .log-title{
     padding-bottom: 20px;
-    font-size: 40px;
-    line-height: 1.58;
-    letter-spacing: normal;
+    font-size: 30px;
+    line-height: 1.47;
+    letter-spacing: -1.5px;
     font-weight: 500;
     color: #00a8cd;
     box-sizing: border-box;
 }
 .log-desc{
-    margin-bottom: 80px;
-    font-size: 18px;
-    line-height: 1.44;
-    letter-spacing: -0.9px;
+    margin-bottom: 50px;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: -0.8px;
     color: #313946;
+    text-align: center;
     white-space: nowrap;
 }
-.log-btn{
+/* .log-btn{
     display: flex;
+} */
+.log-btn>a{
+    padding: 15px 16px;
+    letter-spacing: -1.2px;
+    border-radius: 10px;
+    background-color: #00a8cd;
+    color: #fff;
 }
-.log-btn a:first-of-type{
-    margin-right: 40px;
+.log-desc2{
+    display: none;
 }
 
 @media (max-width : 1024px){
     .log-main{
         width: 100%;
-        margin: 37px 0 78.5px 0;
+        margin: 37px 0 117px 0;
     }
     .login-wrap{
         padding: 0 36px 0 36px;
         border: none;
+    }
+    .login{
+        padding: 0 22px 0 22px;
+        box-sizing: border-box;
     }
     .login ul{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+    .login ul>li>img{
+        display: none;
+    }
     .log-title{
+        padding-bottom: 16.9px;
         font-size: 30px;
         line-height: 1.47;
     }
     .log-desc{
-        margin-bottom: 70px;
+        display: none;
+    }
+    .log-desc2{
+        display: block;
+    }
+    .log-desc2{
+        margin-bottom: 69px;
         font-size: 16px;
-        line-height: 1.5;
+        line-height: 1.75;
         letter-spacing: -0.8px;
         white-space: initial;
         text-align: center;
@@ -66,12 +92,5 @@
     .log-btn{
         display: flex;
         flex-direction: column;
-    }
-    .log-btn a:first-of-type{
-        margin-right: 0;
-        margin-bottom: 25.6px;
-    }
-    .log-btn a img{
-        width: 100%;
     }
 }

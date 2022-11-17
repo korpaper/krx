@@ -131,7 +131,7 @@
     padding: 22px 0 10.5px 0;
 }
 .center-quick ul li:nth-of-type(9) a .icon-bg{
-    padding-bottom: 10px;
+    padding-bottom: 9.5px;
 }
 
 @media(max-width : 1024px){
@@ -169,7 +169,7 @@
         box-sizing: border-box;
     }
     .center-quick ul li:nth-of-type(8){
-        padding-top: 10px;
+        padding-top: 5px;
         box-sizing: border-box;
     }
     .center-quick ul li a .icon-bg{
@@ -185,10 +185,11 @@
         width: 50px;
     }
     .center-quick ul li:nth-of-type(9) .icon-text{
-        width: 60px;
+        /* width: 60px; */
     }
     .center-quick ul li:nth-of-type(9) .icon-bg{
-        padding-bottom: 15px;
+        padding-top: 25px;
+        padding-bottom: 20px;
     }
 }
 /* 베스트 콘텐츠 탭 */
@@ -428,7 +429,8 @@
 }
 .edu-tab-inner .edu-tab-inner-list{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    flex-wrap: nowrap;
     width: 100%;
     height: 76px;
     padding: 0 3px 0 12px;
@@ -441,22 +443,29 @@
     box-sizing: border-box;
 }
 .edu-tab-inner .edu-tab-inner-list .category-tit{
-    width: 8%;
+    width: 17%;
     color: #00a8cd;
     letter-spacing: -1.2px;
 }
 .edu-tab-inner .edu-tab-inner-list a{
-    width: 75%;
+    width: 65%;
     color: #313946;
     letter-spacing: -0.8px;
 }
 .edu-tab-inner .edu-tab-inner-list .notice-date{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 11%;
+    justify-content: flex-end;
+    white-space: nowrap;
+    width: 17%;
     letter-spacing: -0.8px;
     color: #313946;
+}
+.notice-date>img{
+    padding-right: 10px;
+}
+.edu-tab-inner .edu-tab-inner-list .empty-list{
+    margin: 0 auto;
 }
 /* 모바일 공지사항 */
 
@@ -528,6 +537,8 @@
 .tab-list .list{
     display: none;
 }
+
+
 
 @media(max-width : 1024px){
     .edu-notice{
@@ -915,7 +926,7 @@
     z-index: 9999;
     width: 620px;
     height: 665px;
-    background: #fff;
+    background: transparent;
     overflow: hidden;  
 }
 .main-modal img{
@@ -944,7 +955,7 @@
     z-index: 9999;
     width: 620px;
     height: 665px;
-    background: none;
+    background: transparent;
     overflow: hidden;  
 }
 .slide-modal img{
@@ -962,6 +973,66 @@
     font-family: "NotoSansKR";
 }
 
+@media (max-width : 1024px){
+    .main-modal{
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        z-index: 9999;
+        width: 80%;
+        height: fit-content;
+        background: transparent;
+        overflow: hidden; 
+        transform: translate(-50%, -50%); 
+    }
+    .main-modal img{
+        width: 100%;
+    }
+    .main-modal-btn{
+        display: flex;
+    }
+    .main-modal-btn button{
+        width: 310px;
+        height: 40px;
+        border: none;
+        cursor: pointer;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
+        background: #fff;
+        font-family: "NotoSansKR";
+    }
+    
+    
+    .slide-modal{
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        z-index: 9999;
+        width: 80%;
+        height: fit-content;
+        background: transparent;
+        overflow: hidden; 
+        transform: translate(-50%, -50%); 
+    }
+    .slide-modal img{
+        width: 100%;
+    }
+    .close-slide-btn{
+        float: right;
+        width: 100px;
+        height: 40px;
+        transform: translateX(0);
+        border: none;
+        cursor: pointer;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
+        background: #fff;
+        font-family: "NotoSansKR";
+    }
+    
+}
 
 
 

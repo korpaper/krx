@@ -76,7 +76,7 @@ function layerPopupHide(state){
 
 
 // 스와이퍼 모달팝업
-$('.swiper-slide').click(function(){
+$('.swiper-slide.slide1, .swiper-slide.slide2, .swiper-slide.slide3').click(function(){
     $('.slide-modal').css('display', 'block');
 });
 

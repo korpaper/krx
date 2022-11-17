@@ -22,8 +22,8 @@ $('.etk-navi.etk-tab > li').on('click keyup',function(e){
 
     if (classList.includes('etk-tab')) {
         $(this).addClass('active5').siblings().removeClass('active5');
-        const boxCon=$('.etk-tab-list.etk > li');
-        boxCon.eq(tabNum).show().addClass('on5').siblings().hide().removeClass('on5');
+        // const boxCon=$('.etk-tab-list.etk > li');
+        // boxCon.eq(tabNum).show().addClass('on5').siblings().hide().removeClass('on5');
     }
 });
 // 옵션 가격결정 탭

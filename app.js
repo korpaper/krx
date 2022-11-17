@@ -450,7 +450,12 @@ app.get('/mypage', function(req, res) {
     res.sendFile(__dirname + "/html/mypage.html");
 });
 
-//로그인
-app.get('/login', function(req, res) {
-    res.sendFile(__dirname + "/html/login.html");
+//본인인증
+app.get('/verify', function(req, res) {
+    res.sendFile(__dirname + "/html/verify.html");
+});
+
+//에러페이지
+app.get('/error', function(req, res) {
+    res.sendFile(__dirname + "/html/error.html");
 });

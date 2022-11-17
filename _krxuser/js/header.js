@@ -3,8 +3,8 @@ $(document).ready(function(){
     $(document).on('mouseover','header .header-bottom',function(){
         isActiveGNB = true
         if (isActiveGNB) {
-            $('header nav .sub-bg').slideDown()
-            $('header nav .sub').slideDown();
+            $('header nav .sub-bg').stop().slideDown()
+            $('header nav .sub').stop().slideDown();
         }
     });
     
@@ -57,7 +57,7 @@ $(document).ready(function(){
     });
 
     // gnb
-    let isActiveDepth = "krx";
+    let isActiveDepth = "krx-academy";
     $('.mb-nav>li>a').click(function(e){
         const clickedValue = $(this).siblings().attr('class').split(' ')[1];
         // if (clickedValue !== "deal" && isActiveDepth !== clickedValue) {
