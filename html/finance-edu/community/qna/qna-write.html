@@ -37,9 +37,24 @@
                 </div>
                 <div class="video-child-cont qna2">
                     <form>
+                        <div class="qna-cate">
+                            <p class="qna-cate-tit">구분</p>
+                            <select name="qna-category">
+                                <option value="">구분을 선택해주세요</option>
+                                <option value="금융교육">금융교육</option>
+                                <option value="파생상품아카데미">파생상품아카데미</option>
+                                <option value="환리스크 관리 교육">환리스크 관리 교육</option>
+                                <option value="ETF&ETN">ETF&ETN</option>
+                                <option value="ELW">ELW</option>
+                            </select>
+                        </div>
                         <div class="qna-title-wrap">
                             <label for="qna-title">제목</label>
                             <input type="text" name="qna-title" id="qna-title" placeholder="제목을 45자 이내로 작성해주세요" maxlength="45">
+                        </div>
+                        <div class="qna-email-wrap">
+                            <label for="qna-email">이메일</label>
+                            <input type="text" name="qna-email" id="qna-email" placeholder="이메일을 작성해주세요" maxlength="45">
                         </div>
                         <div class="qna-cont-wrap">
                             <label for="qna-cont">내용</label>

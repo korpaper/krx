@@ -451,6 +451,9 @@
     width: 65%;
     color: #313946;
     letter-spacing: -0.8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .edu-tab-inner .edu-tab-inner-list .notice-date{
     display: flex;
@@ -921,22 +924,28 @@
 .main-modal{
     display: none;
     position: fixed;
-    top: 15%;
-    left: 35%;
+    top: 0;
+    left: 0;
     z-index: 9999;
-    width: 620px;
-    height: 665px;
-    background: transparent;
-    overflow: hidden;  
+    width: 100%;
+    height: 100%;
 }
-.main-modal img{
+.main-modal-wrap{
+    position: relative;
+    top: 20%;
+    left: 50%;
+    width: 30%;
+    height: 20%;
+    transform: translateX(-50%);
+}
+.main-modal-wrap img{
     width: 100%;
 }
 .main-modal-btn{
     display: flex;
 }
 .main-modal-btn button{
-    width: 310px;
+    width: 50%;
     height: 40px;
     border: none;
     cursor: pointer;
@@ -946,25 +955,30 @@
     font-family: "NotoSansKR";
 }
 
-
 .slide-modal{
     display: none;
     position: fixed;
-    top: 15%;
-    left: 35%;
+    top: 0;
+    left: 0;
     z-index: 9999;
-    width: 620px;
-    height: 665px;
-    background: transparent;
-    overflow: hidden;  
+    width: 100%;
+    height: 100%; 
+}
+.slide-modal-wrap{
+    position: relative;
+    top: 20%;
+    left: 50%;
+    width: 30%;
+    height: 20%;
+    transform: translateX(-50%);
 }
 .slide-modal img{
     width: 100%;
 }
 .close-slide-btn{
+    float: right;
     width: 100px;
     height: 40px;
-    transform: translateX(520px);
     border: none;
     cursor: pointer;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -977,14 +991,19 @@
     .main-modal{
         display: none;
         position: fixed;
-        top: 50%;
-        left: 50%;
+        top: 0;
+        left: 0;
         z-index: 9999;
-        width: 80%;
-        height: fit-content;
-        background: transparent;
-        overflow: hidden; 
-        transform: translate(-50%, -50%); 
+        width: 100%;
+        height: 100%;
+    }
+    .main-modal-wrap{
+        position: relative;
+        top: 20%;
+        left: 50%;
+        width: 50%;
+        height: 20%;
+        transform: translateX(-50%);
     }
     .main-modal img{
         width: 100%;
@@ -993,7 +1012,7 @@
         display: flex;
     }
     .main-modal-btn button{
-        width: 310px;
+        width: 50%;
         height: 40px;
         border: none;
         cursor: pointer;
@@ -1002,19 +1021,22 @@
         background: #fff;
         font-family: "NotoSansKR";
     }
-    
-    
     .slide-modal{
         display: none;
         position: fixed;
-        top: 50%;
-        left: 50%;
+        top: 0;
+        left: 0;
         z-index: 9999;
-        width: 80%;
-        height: fit-content;
-        background: transparent;
-        overflow: hidden; 
-        transform: translate(-50%, -50%); 
+        width: 100%;
+        height: 100%;
+    }
+    .slide-modal-wrap{
+        position: relative;
+        top: 20%;
+        left: 50%;
+        width: 50%;
+        height: 20%;
+        transform: translateX(-50%);
     }
     .slide-modal img{
         width: 100%;
@@ -1032,6 +1054,43 @@
         font-family: "NotoSansKR";
     }
     
+}
+
+@media (max-width:768px){
+    .main-modal{
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        width: 100%;
+        height: 100%;
+    }
+    .main-modal-wrap{
+        position: relative;
+        top: 20%;
+        left: 50%;
+        width: 70%;
+        height: 20%;
+        transform: translateX(-50%);
+    }
+    .slide-modal{
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        width: 100%;
+        height: 100%;
+    }
+    .slide-modal-wrap{
+        position: relative;
+        top: 20%;
+        left: 50%;
+        width: 70%;
+        height: 20%;
+        transform: translateX(-50%);
+    }
 }
 
 

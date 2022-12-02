@@ -80,3 +80,17 @@ $('.open-md').click(function(){
 $('.close-btn').click(function(){
     $('.modal-wrap').css('display', 'none');
 });
+
+// 공지사항 인덱스 클릭
+const nonClick = document.querySelectorAll(".notice-btn ul li a");
+
+function handleClick(event) {
+    nonClick.forEach((e) => {
+    e.classList.remove("clicked-notice");
+    });
+    event.target.classList.add("clicked-notice");
+}
+
+nonClick.forEach((e) => {
+    e.addEventListener("click", handleClick);
+});
