@@ -50,7 +50,6 @@ $(document).ready(function(){
             $(this).parent().addClass('active7').siblings().removeClass('active7');
             $(this).siblings();
         }
-        });
-
+    });
 })
 

@@ -49,7 +49,7 @@
     display: none;
     width: 100%;
     color: #313946;
-    font-size: 18px;
+    font-size: 17px;
 }
 .dep3>li{
     width: 100%;
@@ -63,13 +63,13 @@
     padding: 11px 26px;
     background:#f7f7f7;
     box-sizing: border-box;
-    letter-spacing: -0.9px;
+    letter-spacing: -2px;
 }
 
 .dep4{
     display: none;
     color: #313946;
-    font-size: 16px;
+    font-size: 15px;
 }
 .dep4>li>a::before{
     display: inline-block;

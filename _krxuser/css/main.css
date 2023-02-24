@@ -28,6 +28,8 @@
     font-size: 22px;
     color: #00b4d5;
     font-family: OmniGothic035;
+    transition: all 0.5s;
+    cursor: pointer;
 }
 .main-search .sc-box{
     width: 85%;
@@ -40,11 +42,17 @@
     padding: 22px 0;
     border: 1px solid #00b4d5;
     box-sizing: border-box;
+    transition: all 0.5s;
 }
 .main-search a img{
     padding-right: 16px;
     box-sizing: border-box;
 }
+
+.main-search:hover .sc-tit{
+    transform: translateY(78px);
+}
+
 /* 모바일검색창 */
 .mb-main-search{
     display: none;
@@ -104,6 +112,7 @@
     border-radius: 15px;
     box-shadow: 6px 8px 10px 0 rgba(103, 110, 154, 0.16);
     box-sizing: border-box;
+    transition: all 0.5s;
 }
 .center-quick ul li a{
     display: flex;
@@ -111,9 +120,13 @@
     justify-content: center;
     align-items: center;
 }
+.icon-text{
+    transition: all 0.3s;
+}
 .center-quick ul li a .icon-bg{
     padding: 18px 0 13px 0;
     box-sizing: border-box;
+    transition: all 0.3s;
 }
 .center-quick ul li:nth-of-type(1) a .icon-bg{
     padding-bottom: 9.5px;
@@ -132,6 +145,16 @@
 }
 .center-quick ul li:nth-of-type(9) a .icon-bg{
     padding-bottom: 9.5px;
+}
+
+.center-quick ul li:hover{
+    background-color: #a6a6a6;
+}
+.center-quick ul li:hover .icon-text{
+    color: #f7f7f7;
+}
+.center-quick ul li:hover .icon-bg{
+    transform: scale(1.1);
 }
 
 @media(max-width : 1024px){
@@ -230,6 +253,7 @@
     height: 315px;
     border-radius: 10px;
     background: #fff;
+    transition: all 0.5s;
 }
 .tab-inner .tab-inner-list a{
     display: block;
@@ -282,6 +306,10 @@
     background-size: 1920px;
     background-position: center center;
     background-color: #f5f7fb;
+}
+
+.tab-inner .tab-inner-list:hover{
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.3);
 }
 
 @media(max-width : 1024px){
@@ -787,6 +815,7 @@
     height: 98.4%;
     background: rgba(0, 0, 0, 0.5);
     opacity: 0;
+    transition: all 0.5s;
 }
 .branch .cyber .hover2{
     width: 100%;
@@ -797,7 +826,6 @@
     opacity: 1;
 }
 .branch .cyber:hover .hover{opacity: 1;}
-
 .branch p{
     margin: 17px 0 0 10px;
     padding-right: 5px;
@@ -879,12 +907,22 @@
     justify-content: space-between;
     margin-top: 30px;
 }
+.game .game-list li{
+    border-radius: 8px;
+    overflow: hidden;
+}
 .game .game-list li a{
     width: 286px;
     height: 210px;
 }
 .game .game-list li a img{
     width: 100%;
+    transition: all 0.5s;
+}
+
+.game .game-list li a img:hover{
+    transform:scale(1.1);
+    opacity: 0.7;
 }
 
 @media(max-width : 1024px){

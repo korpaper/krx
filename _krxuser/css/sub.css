@@ -1191,6 +1191,7 @@ table{
     width: 300px;
 } */
 .app-inner>ul>li:nth-of-type(n + 2){
+    height: 330px;
     padding: 19px 21px 23px 23px;
     background: #f1f2f5;
     box-sizing: border-box;
@@ -1198,7 +1199,7 @@ table{
 .app-title{
     position: absolute;
     left: 30px;
-    bottom: 30px;
+    bottom: 70px;
     font-size: 22px;
     color: #fff;
 }
@@ -1249,7 +1250,7 @@ table{
     position: relative;
     display: grid;
     grid-template-columns: 32% 32% 32%;
-    grid-template-rows: 182.5px 182.5px;
+    grid-template-rows: 280px 280px;
     grid-column-gap: 21px;
     grid-row-gap: 25px;
 }
@@ -1287,6 +1288,7 @@ table{
 }
 .app-inner3.inner3>ul>li:nth-of-type(2), .app-inner3.inner3>ul>li:nth-of-type(3),
 .app-inner3.inner3>ul>li:last-child{
+    height: 280px;
     padding: 19px 21px 0 23px;
     border-radius: 10px;
     background: #f1f2f5;
@@ -1372,6 +1374,7 @@ table{
         display: none;
     }
     .app-inner>ul>li:nth-of-type(n + 2){
+        height: 100%;
         padding: 24px 13px 24px 20px;
     }
     .app-inner{
@@ -1404,6 +1407,7 @@ table{
     }
     .app-inner3.inner3>ul>li:nth-of-type(2), .app-inner3.inner3>ul>li:nth-of-type(3),
     .app-inner3.inner3>ul>li:last-child{
+        height: 100%;
         padding: 24px 13px 24px 20px;
         margin: 15px 0;
     }
@@ -2558,4 +2562,8 @@ table{
     color: #fff;
     box-sizing: border-box;
     cursor: pointer;
+}
+
+.cal-modal{
+    display: none;
 }
