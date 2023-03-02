@@ -2567,3 +2567,13 @@ table{
 .cal-modal{
     display: none;
 }
+
+/* 테마교실 수정 */
+.them-inner-cont{
+    padding: 0 23px;
+}
+@media (max-width : 1024px){
+    .them-inner-cont{
+        padding: 0 8px;
+    }
+}
