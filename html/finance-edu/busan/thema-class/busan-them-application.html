@@ -35,21 +35,22 @@
                         </ul>
                     </div>
                 </div>
-                <div class="desc appli">
+                <!-- 초중고 -->
+                <!-- <div class="desc appli">
                     <p class="txt-cont-tit type"><img src="/_krxuser/img/text-icon.webp" alt="">개인정보 수집 및 이용에 대한 안내</p>
                     <div class="appli-box">
                         <ul>
                             <li>
                                 <p class="desc-txt">01. 개인정보의 수집ㆍ이용 목적</p>
-                                <p class="desc-txt">한국거래소 금융교육프로그램 참가신청 접수 및 관리를 위해 개인정보를 수집하고 있습니다.</p>
+                                <p class="desc-txt">한국거래소 금융교육프로그램 참가신청 접수 및 교육 수료증 발급 등 관리 업무를 위해 개인정보를 수집하고 있습니다.</p>
                             </li>
                             <li>
                                 <p class="desc-txt">02. 수집하는 개인정보의 항목</p>
-                                <p class="desc-txt">이름(대표자명), 휴대전화번호, 소속(학교, 학년)</p>
+                                <p class="desc-txt">학부모이름, 학부모 휴대전화번호, 학생이름, 소속(학교, 학년, 반, 번호)</p>
                             </li>
                             <li>
                                 <p class="desc-txt">03. 개인정보의 보유 및 이용기간</p>
-                                <p class="desc-txt">교육 종료일로부터 2년 간</p>
+                                <p class="desc-txt">교육 종료일로부터 3년 간</p>
                             </li>
                             <li>
                                 <p class="desc-txt">04. 동의 거부권 및 불이익</p>
@@ -58,8 +59,20 @@
                         </ul>
                     </div>
                     <div class="radio-wrap">
-                        <input type="radio" id="agree" name="agree" value="" style="width:20px; height:20px;">
-                        <label for="agree">위 사항을 모두 읽고 동의함</label>
+                        <div>
+                            <span style="margin-right: 15px;">만 14세 미만 아동에 대한 법정대리인의 동의(개인정보보호법 제 22조 제5항)</span>
+                            <input type="radio" id="agree1" name="agree1" value="" style="width:20px; height:20px;">
+                            <label for="agree1" style="margin-right: 15px;">위 사항을 모두 읽고 동의함</label>
+                            <input type="radio" id="reject1" name="agree1" value="" style="width:20px; height:20px;">
+                            <label for="reject1">동의하지 않음</label>
+                        </div>
+                        <div>
+                            <span style="margin-right: 15px;">교육 신청자(정보주체)의 동의</span>
+                            <input type="radio" id="agree2" name="agree2" value="" style="width:20px; height:20px;">
+                            <label for="agree2" style="margin-right: 15px;">위 사항을 모두 읽고 동의함</label>
+                            <input type="radio" id="reject2" name="agree2" value="" style="width:20px; height:20px;">
+                            <label for="reject2">동의하지 않음</label>
+                        </div>
                     </div>
                     <form>
                         <div class="appli-box2">
@@ -75,28 +88,26 @@
                                     </colgroup>
                                     <tbody>
                                         <tr>
-                                            <th>지역구분</th>
-                                            <td>
-                                                부산
+                                            <th>학부모 이름</th>
+                                            <td colspan="4">
+                                                <input type="text" id="pa-name" name="pa-name" placeholder="학부모이름을 입력하세요···" maxlength="30" style="border: 0; width: 40%;"/>
                                             </td>
-                                            <th class="bdL">교육구분</th>
-                                            <td>
-                                                <select name="appli-edu1" style="width: 30%;"></select>
-                                                <select name="appli-edu2" style="width: 60%;"></select>
-                                            </td>
-                                        </tr>					
+                                        </tr>	
                                         <tr>
-                                            <th>이름(대표자명)</th>
-                                            <td>
-                                                <input type="text" id="appli-name" name="appli-name" maxlength="20" placeholder="이름을 입력하세요···" style="border: 0; width: 80%;"/>
+                                            <th>주소</th>
+                                            <td colspan="4">
+                                                <div class="post">
+                                                    <input type="text" name="postcode" id="postcode" placeholder="우편번호" readonly />
+                                                    <a href="#lnk">주소검색</a>
+                                                </div>
+                                                <div class="address">
+                                                    <input type="text" name="postcode" id="add1" placeholder="주소" readonly />
+                                                    <input type="text" name="postcode" id="add2" placeholder="상세주소" />
+                                                </div>
                                             </td>
-                                            <th class="bdL">학교, 단체</th>
-                                            <td>
-                                                <input type="text" id="appli-group" name="appli-group" maxlength="30" placeholder="학교, 단체명을 입력하세요···" style="border: 0; width: 80%;"/>
-                                            </td>
-                                        </tr>
+                                        </tr>				
                                         <tr>
-                                            <th>휴대전화</th>
+                                            <th>학부모 휴대전화</th>
                                             <td colspan="3">
                                                 010 
                                                 - <input type="text" size="4" maxlength="4" name="encryp_cellphone_no2"/> 
@@ -104,44 +115,318 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th>교육일시</th>
-                                            <td colspan="3">
-                                                <div class="appli-time">
-                                                    2022년 11월 1일 
-                                                    <select name="eduHour1" id="eduHour1" style="width: 84px;"></select> 시 
-                                                    <select name="eduMin1" id="eduMin1" style="width: 84px;"></select> 분 ~ 
-                                                    <select name="eduHour2" id="eduHour2" style="width: 84px;"></select> 시 
-                                                    <select name="eduMin2" id="eduMin2" style="width: 84px;"></select> 분 
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>참여인원</th>
+                                            <th>학생이름</th>
                                             <td>
-                                                <input type="text" class="text" name="partc_pers_cnt" maxlength="2" style="width: 30%;"/> 명
+                                                <input type="text" id="appli-name" name="appli-name" maxlength="20" placeholder="학생이름을 입력하세요···" style="border: 0; width: 80%;"/>
                                             </td>
-                                            <th class="bdL">참가 학년</th>
+                                            <th class="bdL">학교명</th>
                                             <td>
-                                                <select name="edu-drade" id="edu-drade" style="width: 30%;"></select>
+                                                <input type="text" id="appli-group" name="appli-group" maxlength="30" placeholder="학교명을 입력하세요···" style="border: 0; width: 80%;"/>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th>강의내용</th>
-                                            <td colspan="3">
-                                                <input type="text" class="text" name="cont" id="cont" maxlength="200" placeholder="강의 내용을 입력하세요···" style="border: 0; width: 100%;"/>
+                                            <th class="bdL">학년</th>
+                                            <td>
+                                                <select name="edu-grade" id="edu-grade" style="width: 40%;"></select>
+                                            </td>
+                                            <th class="bdL">반/번호</th>
+                                            <td>
+                                                <input type="text" id="appli-class1" name="appli-class" maxlength="10" placeholder="반" style="border: 0; width: 5%;"/>
+                                                /
+                                                <input type="text" id="appli-class2" name="appli-class" maxlength="10" placeholder="번호" style="border: 0; width: 10%;"/>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th>신청이유</th>
-                                            <td colspan="3">
-                                                <input type="text" class="text" name="appli-rsn" id="appli-rsn" maxlength="200" placeholder="신청 이유를 입력하세요···" style="border: 0; width: 100%;"/>
+                                            <th>학생이름</th>
+                                            <td>
+                                                <input type="text" id="appli-name" name="appli-name" maxlength="20" placeholder="학생이름을 입력하세요···" style="border: 0; width: 80%;"/>
+                                            </td>
+                                            <th class="bdL">학교명</th>
+                                            <td>
+                                                <input type="text" id="appli-group" name="appli-group" maxlength="30" placeholder="학교명을 입력하세요···" style="border: 0; width: 80%;"/>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th>비고</th>
-                                            <td colspan="3">
-                                                <textarea cols="80%" name="remk"></textarea>
+                                            <th class="bdL">학년</th>
+                                            <td>
+                                                <select name="edu-grade" id="edu-grade" style="width: 40%;"></select>
                                             </td>
+                                            <th class="bdL">반/번호</th>
+                                            <td>
+                                                <input type="text" id="appli-class1" name="appli-class" maxlength="10" placeholder="반" style="border: 0; width: 5%;"/>
+                                                /
+                                                <input type="text" id="appli-class2" name="appli-class" maxlength="10" placeholder="번호" style="border: 0; width: 10%;"/>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>지역구분</th>
+                                            <td colspan="4">서울</td>
+                                        </tr>
+                                        <tr>
+                                            <th>강좌명</th>
+                                            <td>2023년 학부모와 함께하는 초등학생 증권교실</td>
+                                            <th style="border-left: 1px solid rgba(0, 0, 0, 0.1);">교육일</th>
+                                            <td>2023.02.28</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p class="desc-txt">* 교육신청 완료 후 수정이 불가하오니 다시 한번 일정을 확인 하시기 바랍니다.</p>
+                            <div class="appli-btn">
+                                <a href="#lnk" class="send">신청하기</a>
+                                <a href="#lnk" class="cancel">작성취소</a>
+                            </div>
+                        </div>
+                    </form>
+                </div> -->
+                <!-- 대학생,사회초년생 -->
+                <!-- <div class="desc appli">
+                    <p class="txt-cont-tit type"><img src="/_krxuser/img/text-icon.webp" alt="">개인정보 수집 및 이용에 대한 안내</p>
+                    <div class="appli-box">
+                        <ul>
+                            <li>
+                                <p class="desc-txt">01. 개인정보의 수집ㆍ이용 목적</p>
+                                <p class="desc-txt">한국거래소 금융교육프로그램 참가신청 접수 및 교육 수료증 발급 등 관리 업무를 위해 개인정보를 수집하고 있습니다.</p>
+                            </li>
+                            <li>
+                                <p class="desc-txt">02. 수집하는 개인정보의 항목</p>
+                                <p class="desc-txt">이름, 단체명, 휴대전화번호</p>
+                            </li>
+                            <li>
+                                <p class="desc-txt">03. 개인정보의 보유 및 이용기간</p>
+                                <p class="desc-txt">교육 종료일로부터 3년 간</p>
+                            </li>
+                            <li>
+                                <p class="desc-txt">04. 동의 거부권 및 불이익</p>
+                                <p class="desc-txt">개인정보 수집 · 이용에 동의하지 않을 수 있으나, 일부 서비스 이용이 제한될 수 있습니다.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="radio-wrap">
+                        <div>
+                            <input type="radio" id="agree1" name="agree1" value="" style="width:20px; height:20px;">
+                            <label for="agree1" style="margin-right: 15px;">위 사항을 모두 읽고 동의함</label>
+                            <input type="radio" id="reject1" name="agree1" value="" style="width:20px; height:20px;">
+                            <label for="reject1">동의하지 않음</label>
+                        </div>
+                    </div>
+                    <form>
+                        <div class="appli-box2">
+                            <p class="txt-cont-tit type"><img src="/_krxuser/img/text-icon.webp" alt="">교육과정 신청서 작성</p>
+                            <div class="design-table2 appliT">  
+                                <table summary="교육과정 신청서 입력">
+                                    <caption class="blind">교육과정 신청서 입력</caption>
+                                    <colgroup>
+                                        <col width="138px"/>
+                                        <col width="324px"/>
+                                        <col width="138px"/>
+                                        <col width="324px"/>
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th>이름</th>
+                                            <td>
+                                                <input type="text" id="pa-name" name="pa-name" placeholder="이름을 입력하세요···" maxlength="30" style="border: 0; width: 90%;"/>
+                                            </td>
+                                            <th class="bdL">단체명</th>
+                                            <td>
+                                                <input type="text" id="appli-group" name="appli-group" maxlength="30" placeholder="단체명을 입력하세요···" style="border: 0; width: 80%;"/>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <tr>
+                                                <th>지역구분</th>
+                                                <td>서울</td>
+                                                <th style="border-left: 1px solid rgba(0, 0, 0, 0.1);">휴대전화</th>
+                                                <td>
+                                                    010 
+                                                    - <input type="text" size="4" maxlength="4" name="encryp_cellphone_no2"/> 
+                                                    - <input type="text" size="4" maxlength="4" name="encryp_cellphone_no3"/>
+                                                </td>
+                                            </tr>
+                                        </tr>
+                                        <tr>
+                                            <th>강좌명</th>
+                                            <td style="padding-right: 18px;">2023년 서울지역 하계 1기 대학생&사회초년생 증권시장교실</td>
+                                            <th style="border-left: 1px solid rgba(0, 0, 0, 0.1);">교육일</th>
+                                            <td>2023.02.28</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p class="desc-txt">* 교육신청 완료 후 수정이 불가하오니 다시 한번 일정을 확인 하시기 바랍니다.</p>
+                            <div class="appli-btn">
+                                <a href="#lnk" class="send">신청하기</a>
+                                <a href="#lnk" class="cancel">작성취소</a>
+                            </div>
+                        </div>
+                    </form>
+                </div> -->
+                <!-- 교사 -->
+                <!-- <div class="desc appli">
+                    <p class="txt-cont-tit type"><img src="/_krxuser/img/text-icon.webp" alt="">개인정보 수집 및 이용에 대한 안내</p>
+                    <div class="appli-box">
+                        <ul>
+                            <li>
+                                <p class="desc-txt">01. 개인정보의 수집ㆍ이용 목적</p>
+                                <p class="desc-txt">한국거래소 금융교육프로그램 참가신청 접수 및 교육 수료증 발급 등 관리 업무를 위해 개인정보를 수집하고 있습니다.</p>
+                            </li>
+                            <li>
+                                <p class="desc-txt">02. 수집하는 개인정보의 항목</p>
+                                <p class="desc-txt">이름, 휴대전화번호, 소속(근무지, 학교, 직급)</p>
+                            </li>
+                            <li>
+                                <p class="desc-txt">03. 개인정보의 보유 및 이용기간</p>
+                                <p class="desc-txt">이용목적 달성 시 까지</p>
+                            </li>
+                            <li>
+                                <p class="desc-txt">04. 동의 거부권 및 불이익</p>
+                                <p class="desc-txt">개인정보 수집 · 이용에 동의하지 않을 수 있으나, 일부 서비스 이용이 제한될 수 있습니다.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="radio-wrap">
+                        <div>
+                            <input type="radio" id="agree1" name="agree1" value="" style="width:20px; height:20px;">
+                            <label for="agree1" style="margin-right: 15px;">위 사항을 모두 읽고 동의함</label>
+                            <input type="radio" id="reject1" name="agree1" value="" style="width:20px; height:20px;">
+                            <label for="reject1">동의하지 않음</label>
+                        </div>
+                    </div>
+                    <form>
+                        <div class="appli-box2">
+                            <p class="txt-cont-tit type"><img src="/_krxuser/img/text-icon.webp" alt="">교육과정 신청서 작성</p>
+                            <div class="design-table2 appliT">  
+                                <table summary="교육과정 신청서 입력">
+                                    <caption class="blind">교육과정 신청서 입력</caption>
+                                    <colgroup>
+                                        <col width="138px"/>
+                                        <col width="324px"/>
+                                        <col width="138px"/>
+                                        <col width="324px"/>
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th>수강정보</th>
+                                            <td colspan="4">교사연수 | 제 11기(초등교사) | 2023.02.28 ~ 2023.03.04</td>
+                                        </tr>
+                                        <tr>
+                                            <th>이름</th>
+                                            <td>
+                                                <input type="text" id="pa-name" name="pa-name" placeholder="이름을 입력하세요···" maxlength="30" style="border: 0; width: 90%;"/>
+                                            </td>
+                                            <th class="bdL">학교</th>
+                                            <td class="flex">
+                                                <input type="text" id="appli-group" name="appli-group" maxlength="30" readonly style="border: 0; width: 40%;"/>
+                                                <a href="#lnk" class="school-sc">학교찾기</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>소속교육청</th>
+                                            <td>
+                                                <input type="text" id="pa-name" name="pa-name" placeholder="이름을 입력하세요···" maxlength="30" style="border: 0; width: 90%;"/>
+                                            </td>
+                                            <th class="bdL">설립별</th>
+                                            <td>
+                                                <select name="found" id="found">
+                                                    <option value="">- SELECT -</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>직급</th>
+                                            <td>
+                                                <input type="text" id="posi" name="posi" placeholder="직급을 입력하세요···" maxlength="30" style="border: 0; width: 90%;"/>
+                                            </td>
+                                            <th style="border-left: 1px solid rgba(0, 0, 0, 0.1);">휴대전화</th>
+                                            <td>
+                                                010 
+                                                - <input type="text" size="4" maxlength="4" name="encryp_cellphone_no2"/> 
+                                                - <input type="text" size="4" maxlength="4" name="encryp_cellphone_no3"/>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>나이스개인번호</th>
+                                            <td colspan="4">
+                                                <input type="text" id="nice" name="nice" placeholder="나이스개인번호를 입력하세요···" maxlength="30" style="border: 0; width: 90%;"/>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p class="desc-txt">* 교육신청 완료 후 수정이 불가하오니 다시 한번 일정을 확인 하시기 바랍니다.</p>
+                            <div class="appli-btn">
+                                <a href="#lnk" class="send">신청하기</a>
+                                <a href="#lnk" class="cancel">작성취소</a>
+                            </div>
+                        </div>
+                    </form>
+                </div> -->
+                <!-- 학부모 -->
+                <div class="desc appli">
+                    <p class="txt-cont-tit type"><img src="/_krxuser/img/text-icon.webp" alt="">개인정보 수집 및 이용에 대한 안내</p>
+                    <div class="appli-box">
+                        <ul>
+                            <li>
+                                <p class="desc-txt">01. 개인정보의 수집ㆍ이용 목적</p>
+                                <p class="desc-txt">한국거래소 금융교육프로그램 참가신청 접수 및 교육 수료증 발급 등 관리 업무를 위해 개인정보를 수집하고 있습니다.</p>
+                            </li>
+                            <li>
+                                <p class="desc-txt">02. 수집하는 개인정보의 항목</p>
+                                <p class="desc-txt">이름, 휴대전화번호</p>
+                            </li>
+                            <li>
+                                <p class="desc-txt">03. 개인정보의 보유 및 이용기간</p>
+                                <p class="desc-txt">교육 종료일로부터 3년 간</p>
+                            </li>
+                            <li>
+                                <p class="desc-txt">04. 동의 거부권 및 불이익</p>
+                                <p class="desc-txt">개인정보 수집 · 이용에 동의하지 않을 수 있으나, 일부 서비스 이용이 제한될 수 있습니다.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="radio-wrap">
+                        <div>
+                            <input type="radio" id="agree1" name="agree1" value="" style="width:20px; height:20px;">
+                            <label for="agree1" style="margin-right: 15px;">위 사항을 모두 읽고 동의함</label>
+                            <input type="radio" id="reject1" name="agree1" value="" style="width:20px; height:20px;">
+                            <label for="reject1">동의하지 않음</label>
+                        </div>
+                    </div>
+                    <form>
+                        <div class="appli-box2">
+                            <p class="txt-cont-tit type"><img src="/_krxuser/img/text-icon.webp" alt="">교육과정 신청서 작성</p>
+                            <div class="design-table2 appliT">  
+                                <table summary="교육과정 신청서 입력">
+                                    <caption class="blind">교육과정 신청서 입력</caption>
+                                    <colgroup>
+                                        <col width="138px"/>
+                                        <col width="324px"/>
+                                        <col width="138px"/>
+                                        <col width="324px"/>
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th>이름</th>
+                                            <td colspan="4">
+                                                <input type="text" id="pa-name" name="pa-name" placeholder="이름을 입력하세요···" maxlength="30" style="border: 0; width: 90%;"/>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="bdL">지역구분</th>
+                                            <td>서울</td>
+                                            <th style="border-left: 1px solid rgba(0, 0, 0, 0.1);">휴대전화</th>
+                                            <td>
+                                                010 
+                                                - <input type="text" size="4" maxlength="4" name="encryp_cellphone_no2"/> 
+                                                - <input type="text" size="4" maxlength="4" name="encryp_cellphone_no3"/>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>강좌명</th>
+                                            <td>학부모 교사연수</td>
+                                            <th class="bdL">교육일</th>
+                                            <td>2023.02.28</td>
                                         </tr>
                                     </tbody>
                                 </table>

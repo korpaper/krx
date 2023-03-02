@@ -98,6 +98,9 @@
     font-size: 18px;
     font-family: "NotoSansKR";
 }
+.scbox-wrap .sc-box form input:focus{
+    outline: none;
+}
 .scbox-wrap .sc-box button{
     background-image: url('/_krxuser/img/search.webp');
     background-size: 100%;
